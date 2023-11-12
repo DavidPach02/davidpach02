@@ -2648,7 +2648,7 @@ input, select, textarea {
 			text-align: center;
 			color: rgba(128, 128, 128, 0.75);
 			padding: 0.25em 0 1em 0;
-			font-size: 2em;
+			font-size: 1.8em;
 		}
 
 		.carousel .forward, .carousel .backward {
