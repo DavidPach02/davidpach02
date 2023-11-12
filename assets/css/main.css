@@ -1798,7 +1798,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 4em 0;
+			margin: 0 0 1em 0;
 		}
 
 		.image.left {
@@ -2182,8 +2182,12 @@ input, select, textarea {
 	.wrapper {
 		background: #fff;
 		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		padding: 3em 0 3em 0;
 	}
+		.wrapper h4{
+			color: rgba(128, 128, 128, 0.75);
+			font-size: 0.8em;
+		}
 
 		.wrapper.style2 {
 			padding-top: 0;
@@ -2643,7 +2647,7 @@ input, select, textarea {
 		.carousel h2{
 			text-align: center;
 			color: rgba(128, 128, 128, 0.75);
-			padding: 0.25em 0 1.25em 0;
+			padding: 0.25em 0 1em 0;
 			font-size: 2em;
 		}
 
