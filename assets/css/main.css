@@ -282,6 +282,9 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 	}
+		.row h2{
+			text-align: center;
+		}
 
 		.row > * {
 			box-sizing: border-box;
