@@ -12,26 +12,26 @@ categories.splice(indexToRemove, 1)
 // Initialize all lists -- Format [Name]|[Link]|[Image]
 // Video game category
 const videoGameCategory = [
-    "Assassin's Creed Mirage|vg-acmirage.html|images/pic10.jpg",
-    "The Yellow Boat Reimagined|#|images/pic11.jpg",
-    "Nutrimania|#|images/pic12.jpg",
-    "Matt vs Aliens|#|images/pic13.jpg",
-    "Rebelyon|#|images/pic14.jpg",
-    "Nostalgia|#|images/pic10.jpg",
-    "Connected: Summmer of '09|#|images/pic11.jpg"
+    "Assassin's Creed Mirage|vg-acmirage.html|images/scrolley/scrolley-vg-acmirage.jpg",
+    "The Yellow Boat Reimagined|#|images/scrolley/scrolley-vg-theyellowboat.jpg",
+    "Nutrimania|#|images/scrolley/scrolley-vg-nutrimania.jpg",
+    "Matt vs Aliens|#|images/scrolley/scrolley-vg-mattvsaliens.jpg",
+    "Rebelyon|#|images/scrolley/scrolley-vg-rebelyon.jpg",
+    "Nostalgia|#|images/scrolley/scrolley-vg-nostalgia.jpg",
+    "Connected: Summmer of '09|#|images/scrolley/scrolley-vg-cs09.jpg"
 ]
 
 // Game Jams
 const gameJamCategory = [
-    "Keep the Ball Rolling|gj-keeptheballrolling.html|images/pic10.jpg",
-    "Parasomnia|#|images/pic11.jpg",
-    "Print Sprinter|#|images/pic12.jpg",
-    "Mga Salitang Nasagip sa Hangin|#|images/pic13.jpg",
-    "Nailed It!!!|#|images/pic14.jpg"
+    "Keep the Ball Rolling|gj-keeptheballrolling.html|images/scrolley/scrolley-gj-keeptheballrolling.jpg",
+    "Parasomnia|#|images/scrolley/scrolley-gj-parasomnia.jpg",
+    "Print Sprinter|#|images/scrolley/scrolley-gj-printsprinter.jpg",
+    "Mga Salitang Nasagip sa Hangin|#|images/scrolley/scrolley-gj-msnsh.jpg",
+    "Nailed It!!!|#|images/scrolley/scrolley-gj-nailedit.jpg"
 ]
 
 const tabletopGameCategory = [
-    "Ludens Dei|#|images/pic10.jpg"
+    "Ludens Dei|#|images/scrolley/scrolley-tg-ludensdei.jpg"
 ]
 
 const artCategory = [
