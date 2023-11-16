@@ -3283,103 +3283,157 @@ input, select, textarea {
 
 	}
 
-		* {
-			box-sizing: border-box;
-		  }
+	* {
+		box-sizing: border-box;
+	}
 		  
-		  /* Position the image container (needed to position the left and right arrows) */
-		  .container2 {
-			position: relative;
-		  }
+	/* Position the image container (needed to position the left and right arrows) */
+	.container2 {
+		position: relative;
+	}
 		  
-		  /* Hide the images by default */
-		  .mySlides {
-			display: none;
-			margin: 0;
-		  }
+	/* Hide the images by default */
+	.mySlides {
+		display: none;
+		margin: 0;
+	}
 		
-			.mySlides img{
-				width: auto;
-				height: 25em;
-				object-fit: contain;
-			}
+	.mySlides img{
+		width: auto;
+		height: 25em;
+		object-fit: contain;
+	}
 		  
-		  /* Add a pointer when hovering over the thumbnail images */
-		  .cursor {
-			cursor: pointer;
-			width: auto;
-			height: 5em;
-			object-fit: cover;
-		  }
+	/* Add a pointer when hovering over the thumbnail images */
+	.cursor {
+		cursor: pointer;
+		width: auto;
+		height: 5em;
+		object-fit: cover;
+	}
 		  
-		  /* Next & previous buttons */
-		  .prev,
-		  .next {
-			cursor: pointer;
-			position: absolute;
-			top: 40%;
-			width: auto;
-			padding: 16px;
-			margin-top: -50px;
-			color: white;
-			font-weight: bold;
-			font-size: 20px;
-			border-radius: 0 3px 3px 0;
-			user-select: none;
-			-webkit-user-select: none;
-		  }
+	/* Next & previous buttons */
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 40%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
 		  
-		  /* Position the "next button" to the right */
-		  .next {
-			right: 0;
-			border-radius: 3px 0 0 3px;
-		  }
+	/* Position the "next button" to the right */
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
 		  
-		  /* On hover, add a black background color with a little bit see-through */
-		  .prev:hover,
-		  .next:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		  }
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
 		  
-		  /* Number text (1/3 etc) */
-		  .numbertext {
-			color: #f2f2f2;
-			font-size: 12px;
-			padding: 8px 12px;
-			position: absolute;
-			top: 0;
-		  }
+	/* Number text (1/3 etc) */
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
 		  
-		  /* Container for image text */
-		  .caption-container2 {
+	/* Container for image text */
+	.caption-container2 {
+		text-align: center !important;
+		background-color: #222;
+		padding: 2px 16px;
+		color: white;
+	}
+		.caption-container2 p{
 			text-align: center !important;
-			background-color: #222;
-			padding: 2px 16px;
-			color: white;
-		  }
-			.caption-container2 p{
-				text-align: center !important;
-				margin: 2px 0;
-			}
+			margin: 2px 0;
+		}
 		  
-		  .row2:after {
-			content: "";
-			display: table;
-			clear: both;
-		  }
+	.row2:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 		  
-		  /* Six columns side by side */
-		  .column2 {
-			float: left;
-			width: 16.66%;
-		  }
+	/* Six columns side by side */
+	.column2 {
+		float: left;
+		width: 16.66%;
+	}
 		  
-		  /* Add a transparency effect for thumnbail images */
-		  .demo {
-			opacity: 0.6;
-		  }
+	/* Add a transparency effect for thumnbail images */
+	.demo {
+		opacity: 0.6;
+	}
 		  
-		  .active,
-		  .demo:hover {
-			opacity: 1;
-		  }
+	.active,
+	.demo:hover {
+		opacity: 1;
+	}
+	
+/* Gallery */
+	#gallery {
+		line-height:0;
+		-webkit-column-count:3; /* split it into 5 columns */
+		-webkit-column-gap:5px; /* give it a 5px gap between columns */
+		-moz-column-count:3;
+		-moz-column-gap:5px;
+		column-count:3;
+		column-gap:5px;
+	}
+		#gallery img {
+			width: 100% !important;
+			height: auto !important;
+			margin-bottom:5px; /* to match column gap */
+			/*filter: grayscale(100%);*/
+		}
+		
+		#gallery img:hover {
+			filter:none;
+			/*transition: filter 2s;*/
+		}
+
+	@media (max-width: 1200px) {
+		#gallery {
+			-moz-column-count:    3;
+			-webkit-column-count: 3;
+			column-count:         3;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		#gallery {
+		 	-moz-column-count:    3;
+		 	-webkit-column-count: 3;
+		 	column-count:         3;
+		}
+	}
+
+	@media (max-width: 800px) {
+		#gallery {
+		 	-moz-column-count:    2;
+		 	-webkit-column-count: 2;
+		 	column-count:         2;
+		}
+	}
+
+	@media (max-width: 400px) {
+		#gallery {
+		 	-moz-column-count:    1;
+		 	-webkit-column-count: 1;
+		 	column-count:         1;
+		}
+	 }

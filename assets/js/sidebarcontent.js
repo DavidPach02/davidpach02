@@ -37,14 +37,14 @@ const tabletopGameCategory = [
 
 // Art
 const artCategory = [
-    "90's Japanese Setting|#|images/scrolley/art/scrolley-art-90sJapan.jpg",
-    "Uhk Aran|#|images/scrolley/art/scrolley-art-uhkanar.jpg",
-    "Nutrimania UI Compilation|#|images/scrolley/art/scrolley-art-nutrimaniaui.jpg"
+    "90's Japanese Setting|art-90sjapan.html|images/scrolley/art/scrolley-art-90sJapan.jpg",
+    "Uhk Aran|art-uhkanar.html|images/scrolley/art/scrolley-art-uhkanar.jpg",
+    "Nutrimania Art Compilation|art-nutriui.html|images/scrolley/art/scrolley-art-nutrimaniaui.jpg"
 ]
 
 // Video Editing
 const videoEditingCategory = [
-    "Team Comp or Meme Comp|#|images/scrolley/vid/scrolley-vid-tcomc.jpg"
+    "Team Comp or Meme Comp|vid-tcomc.html|images/scrolley/vid/scrolley-vid-tcomc.jpg"
 ]
 
 var categoriesPicked = "";
