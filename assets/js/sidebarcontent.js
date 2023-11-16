@@ -10,36 +10,39 @@ let indexToRemove = categories.indexOf(pageCategory)
 categories.splice(indexToRemove, 1)
 
 // Initialize all lists -- Format [Name]|[Link]|[Image]
-// Video game category
+// Video Games
 const videoGameCategory = [
     "Assassin's Creed Mirage|vg-acmirage.html|images/scrolley/vg/scrolley-vg-acmirage.jpg",
-    "The Yellow Boat Reimagined|#|images/scrolley/vg/scrolley-vg-theyellowboat.jpg",
-    "Nutrimania|#|images/scrolley/vg/scrolley-vg-nutrimania.jpg",
-    "Matt vs Aliens|#|images/scrolley/vg/scrolley-vg-mattvsaliens.jpg",
-    "Rebelyon|#|images/scrolley/vg/scrolley-vg-rebelyon.jpg",
-    "Nostalgia|#|images/scrolley/vg/scrolley-vg-nostalgia.jpg",
-    "Connected: Summmer of '09|#|images/scrolley/vg/scrolley-vg-cs09.jpg"
+    "The Yellow Boat Reimagined|vg-tybr.html|images/scrolley/vg/scrolley-vg-theyellowboat.jpg",
+    "Nutrimania|vg-nutrimania.html|images/scrolley/vg/scrolley-vg-nutrimania.jpg",
+    "Matt vs Aliens|vg-mattvsaliens.html|images/scrolley/vg/scrolley-vg-mattvsaliens.jpg",
+    "Rebelyon|vg-rebelyon.html|images/scrolley/vg/scrolley-vg-rebelyon.jpg",
+    "Nostalgia|vg-nostalgia.html|images/scrolley/vg/scrolley-vg-nostalgia.jpg",
+    "Connected: Summmer of '09|vg-cs09.html|images/scrolley/vg/scrolley-vg-cs09.jpg"
 ]
 
 // Game Jams
 const gameJamCategory = [
     "Keep the Ball Rolling|gj-keeptheballrolling.html|images/scrolley/gj/scrolley-gj-keeptheballrolling.jpg",
-    "Parasomnia|#|images/scrolley/gj/scrolley-gj-parasomnia.jpg",
-    "Print Sprinter|#|images/scrolley/gj/scrolley-gj-printsprinter.jpg",
-    "Mga Salitang Nasagip sa Hangin|#|images/scrolley/gj/scrolley-gj-msnsh.jpg",
-    "Nailed It!!!|#|images/scrolley/gj/scrolley-gj-nailedit.jpg"
+    "Parasomnia|gj-parasomnia.html|images/scrolley/gj/scrolley-gj-parasomnia.jpg",
+    "Print Sprinter|gj-printsprinter.html|images/scrolley/gj/scrolley-gj-printsprinter.jpg",
+    "Mga Salitang Nasagip sa Hangin|gj-msnsh.html|images/scrolley/gj/scrolley-gj-msnsh.jpg",
+    "Nailed It!!!|gj-nailedit.html|images/scrolley/gj/scrolley-gj-nailedit.jpg"
 ]
 
+// Tabletop Games
 const tabletopGameCategory = [
-    "Ludens Dei|#|images/scrolley/tg/scrolley-tg-ludensdei.jpg"
+    "Ludens Dei|tg-ludensdei.html|images/scrolley/tg/scrolley-tg-ludensdei.jpg"
 ]
 
+// Art
 const artCategory = [
     "90's Japanese Setting|#|images/scrolley/art/scrolley-art-90sJapan.jpg",
     "Uhk Aran|#|images/scrolley/art/scrolley-art-uhkanar.jpg",
     "Nutrimania UI Compilation|#|images/scrolley/art/scrolley-art-nutrimaniaui.jpg"
 ]
 
+// Video Editing
 const videoEditingCategory = [
     "Team Comp or Meme Comp|#|images/scrolley/vid/scrolley-vid-tcomc.jpg"
 ]
