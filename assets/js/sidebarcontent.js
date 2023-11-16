@@ -12,36 +12,36 @@ categories.splice(indexToRemove, 1)
 // Initialize all lists -- Format [Name]|[Link]|[Image]
 // Video game category
 const videoGameCategory = [
-    "Assassin's Creed Mirage|vg-acmirage.html|images/scrolley/scrolley-vg-acmirage.jpg",
-    "The Yellow Boat Reimagined|#|images/scrolley/scrolley-vg-theyellowboat.jpg",
-    "Nutrimania|#|images/scrolley/scrolley-vg-nutrimania.jpg",
-    "Matt vs Aliens|#|images/scrolley/scrolley-vg-mattvsaliens.jpg",
-    "Rebelyon|#|images/scrolley/scrolley-vg-rebelyon.jpg",
-    "Nostalgia|#|images/scrolley/scrolley-vg-nostalgia.jpg",
-    "Connected: Summmer of '09|#|images/scrolley/scrolley-vg-cs09.jpg"
+    "Assassin's Creed Mirage|vg-acmirage.html|images/scrolley/vg/scrolley-vg-acmirage.jpg",
+    "The Yellow Boat Reimagined|#|images/scrolley/vg/scrolley-vg-theyellowboat.jpg",
+    "Nutrimania|#|images/scrolley/vg/scrolley-vg-nutrimania.jpg",
+    "Matt vs Aliens|#|images/scrolley/vg/scrolley-vg-mattvsaliens.jpg",
+    "Rebelyon|#|images/scrolley/vg/scrolley-vg-rebelyon.jpg",
+    "Nostalgia|#|images/scrolley/vg/scrolley-vg-nostalgia.jpg",
+    "Connected: Summmer of '09|#|images/scrolley/vg/scrolley-vg-cs09.jpg"
 ]
 
 // Game Jams
 const gameJamCategory = [
-    "Keep the Ball Rolling|gj-keeptheballrolling.html|images/scrolley/scrolley-gj-keeptheballrolling.jpg",
-    "Parasomnia|#|images/scrolley/scrolley-gj-parasomnia.jpg",
-    "Print Sprinter|#|images/scrolley/scrolley-gj-printsprinter.jpg",
-    "Mga Salitang Nasagip sa Hangin|#|images/scrolley/scrolley-gj-msnsh.jpg",
-    "Nailed It!!!|#|images/scrolley/scrolley-gj-nailedit.jpg"
+    "Keep the Ball Rolling|gj-keeptheballrolling.html|images/scrolley/gj/scrolley-gj-keeptheballrolling.jpg",
+    "Parasomnia|#|images/scrolley/gj/scrolley-gj-parasomnia.jpg",
+    "Print Sprinter|#|images/scrolley/gj/scrolley-gj-printsprinter.jpg",
+    "Mga Salitang Nasagip sa Hangin|#|images/scrolley/gj/scrolley-gj-msnsh.jpg",
+    "Nailed It!!!|#|images/scrolley/gj/scrolley-gj-nailedit.jpg"
 ]
 
 const tabletopGameCategory = [
-    "Ludens Dei|#|images/scrolley/scrolley-tg-ludensdei.jpg"
+    "Ludens Dei|#|images/scrolley/tg/scrolley-tg-ludensdei.jpg"
 ]
 
 const artCategory = [
-    "90's Japanese Setting|#|images/pic10.jpg",
-    "Uhk Aran|#|images/pic11.jpg",
-    "Nutrimania UI Compilation|#|images/pic12.jpg"
+    "90's Japanese Setting|#|images/scrolley/art/scrolley-art-90sJapan.jpg",
+    "Uhk Aran|#|images/scrolley/art/scrolley-art-uhkanar.jpg",
+    "Nutrimania UI Compilation|#|images/scrolley/art/scrolley-art-nutrimaniaui.jpg"
 ]
 
 const videoEditingCategory = [
-    "Team Comp or Meme Comp|#|images/pic10.jpg"
+    "Team Comp or Meme Comp|#|images/scrolley/vid/scrolley-vid-tcomc.jpg"
 ]
 
 var categoriesPicked = "";
