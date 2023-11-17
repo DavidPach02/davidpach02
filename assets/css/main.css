@@ -2591,6 +2591,12 @@ input, select, textarea {
 			padding-top: 2em;
 		}
 
+		#main .timestamp{
+			display: flex; 
+       		justify-content: center 
+		}
+		
+
 /* Article Footer*/
 
 
