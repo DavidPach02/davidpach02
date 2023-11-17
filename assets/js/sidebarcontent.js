@@ -26,6 +26,7 @@ const gameJamCategory = [
     "Keep the Ball Rolling|gj-keeptheballrolling.html|images/scrolley/gj/scrolley-gj-keeptheballrolling.jpg",
     "Parasomnia|gj-parasomnia.html|images/scrolley/gj/scrolley-gj-parasomnia.jpg",
     "Print Sprinter|gj-printsprinter.html|images/scrolley/gj/scrolley-gj-printsprinter.jpg",
+    "Refuse or Defuse|gj-refordef.html|images/scrolley/gj/scrolley-gj-refordef.jpg",
     "Mga Salitang Nasagip sa Hangin|gj-msnsh.html|images/scrolley/gj/scrolley-gj-msnsh.jpg",
     "Nailed It!!!|gj-nailedit.html|images/scrolley/gj/scrolley-gj-nailedit.jpg"
 ]
