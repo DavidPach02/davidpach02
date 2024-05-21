@@ -18,7 +18,8 @@ const videoGameCategory = [
     "Matt vs Aliens|vg-mattvsaliens.html|images/scrolley/vg/scrolley-vg-mattvsaliens.jpg",
     "Rebelyon|vg-rebelyon.html|images/scrolley/vg/scrolley-vg-rebelyon.jpg",
     "Nostalgia|vg-nostalgia.html|images/scrolley/vg/scrolley-vg-nostalgia.jpg",
-    "Connected: Summmer of '09|vg-cs09.html|images/scrolley/vg/scrolley-vg-cs09.jpg"
+    "Connected: Summmer of '09|vg-cs09.html|images/scrolley/vg/scrolley-vg-cs09.jpg",
+    "Skull and Bones|vg-snb.html|images/scrolley/vg/scrolley-vg-skullandbones.jpg"
 ]
 
 // Game Jams
