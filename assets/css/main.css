@@ -2802,6 +2802,19 @@ input, select, textarea {
 			.carousel article p {
 				text-align: center;
 			}
+			
+			.carousel article header{
+				mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+				-webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+				width: auto;
+				overflow: hidden;
+				scroll-behavior: auto;
+			}
+			
+			.carousel article h3{
+				
+				text-wrap-mode: nowrap;
+			}
 
 /* Wide */
 
