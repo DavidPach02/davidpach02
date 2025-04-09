@@ -2808,11 +2808,10 @@ input, select, textarea {
 				-webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
 				width: auto;
 				overflow: hidden;
-				scroll-behavior: auto;
+				scroll-behavior: smooth;
 			}
 			
 			.carousel article h3{
-				
 				text-wrap-mode: nowrap;
 			}
 

@@ -18,13 +18,15 @@ async function demo(el){
     el.scrollLeft = 0;
     await sleep(3000);
 
+    el.style.scrollBehavior = "smooth";
     while(el.scrollLeft + el.offsetWidth <= el.scrollWidth - 1){
         el.scrollTo(el.scrollLeft + 1, 0);
-        await sleep(50);
+        await sleep(20);
     }
 
     await until(_ => el.scrollLeft + el.offsetWidth >= el.scrollWidth - 1);
     await sleep(3000);
+    el.style.scrollBehavior = "auto";
     demo(el);
 }
 
