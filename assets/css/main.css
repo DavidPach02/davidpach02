@@ -2786,6 +2786,27 @@ input, select, textarea {
 			padding: 0 2em 0 2em;
 		}
 
+		.carousel .noreel-large{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+			width: 100%;
+		}
+
+			.carousel .noreel-large > div{
+				text-align: center;
+			}
+		
+		.carousel .noreel-medium{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+			width: 100%;
+			text-align: center;
+		}
+
+			.carousel .noreel-medium > div{
+				text-align: center;
+			}
+
 		.carousel article {
 			display: inline-block;
 			width: 18em;
@@ -2816,6 +2837,12 @@ input, select, textarea {
 
 			.carousel article p {
 				text-align: center;
+				width: auto;
+				overflow: hidden;
+				scroll-behavior: smooth;
+				text-wrap-mode: nowrap;
+				margin: -1em 0 0 0;
+				font-size: 90%;
 			}
 			
 			.carousel article header{
@@ -2855,6 +2882,16 @@ input, select, textarea {
 					width: 18em;
 					margin: 0 1.25em 0 0;
 				}
+			
+			.carousel .noreel-large article{
+				width: 25em;
+				margin: 0em 1em 1em 1em;
+			}	
+
+			.carousel .noreel-medium article{
+				width: 18em;
+				margin: 0em 1em 1em 1em;
+			}	
 
 	}
 
@@ -2942,6 +2979,11 @@ input, select, textarea {
 					margin: 0 1em 0 0;
 				}
 
+			.carousel .noreel-large article{
+				width: 25em;
+				margin: 0em 1em 1em 1em;
+			}
+
 	}
 
 /* Mobile */
@@ -2974,6 +3016,25 @@ input, select, textarea {
 			hr {
 				top: 3em;
 				margin-bottom: 6em;
+			}
+
+		/* Carousel */
+		.carousel .noreel-large article{
+			width: 25em;
+			margin: 0em 1em 1em 1em;
+		}
+
+
+		.carousel .noreel-medium{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+			width: 100%;
+			text-align: center;
+		}
+
+			.carousel .noreel-medium article{
+				width: 25em;
+				margin: 0em 1em 1em 1em;
 			}
 
 		/* Section/Article */

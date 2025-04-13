@@ -80,9 +80,21 @@
 
 			var	$t = $(this),
 				$forward = $('<span class="forward"></span>'),
-				$backward = $('<span class="backward"></span>'),
-				$reel = $t.children('.reel'),
-				$items = $reel.children('article');
+				$backward = $('<span class="backward"></span>');
+
+			var	$reel = $t.children('.reel');
+			var $items = $reel.children('article');
+			if ($reel.length <= 0){
+				var $noreel = $t.children('.noreel-large');
+				if($noreel.length <= 0){
+					$noreel = $t.children('.noreel-medium');
+				}
+
+				var	$gridItems = $noreel.children('div');
+
+				$items = $gridItems.children('article');
+			}
+			
 
 			var	pos = 0,
 				leftLimit,
@@ -180,6 +192,7 @@
 
 			// Init.
 				$window.on('load', function() {
+					if ($reel.length <= 0) return;
 
 					reelWidth = $reel[0].scrollWidth;
 
