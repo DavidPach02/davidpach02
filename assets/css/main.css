@@ -2703,6 +2703,11 @@ input, select, textarea {
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
 	}
+
+		.carousel.style2{
+			background-color: #fff;
+		}
+
 		.carousel h2{
 			text-align: center;
 			color: rgba(128, 128, 128, 0.75);
@@ -2821,6 +2826,9 @@ input, select, textarea {
 			-ms-transition: opacity 0.75s ease-in-out;
 			transition: opacity 0.75s ease-in-out;
 		}
+			.carousel.style2 article{
+				background-color: #f0f4f4;;
+			}
 
 			.carousel article.loading {
 				opacity: 0;
