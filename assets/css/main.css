@@ -2625,6 +2625,11 @@ input, select, textarea {
 		border-bottom: none;
 	}
 
+	#sidebar #highlights {
+		background-color: rgba(128, 128, 128, 0.05);
+		padding: 1em 1em;
+	}
+
 /* Main */
 
 	#main {
@@ -2642,6 +2647,11 @@ input, select, textarea {
 
 		#main footer{
 			text-align: center;
+		}
+
+		#main section.highlights{
+			background-color: rgba(128, 128, 128, 0.05);;
+			padding: 1em 2em;
 		}
 		
 
@@ -2827,7 +2837,7 @@ input, select, textarea {
 			transition: opacity 0.75s ease-in-out;
 		}
 			.carousel.style2 article{
-				background-color: #f0f4f4;;
+				background-color: #f0f4f4;
 			}
 
 			.carousel article.loading {
