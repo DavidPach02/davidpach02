@@ -1819,6 +1819,87 @@ input, select, textarea {
 				width: auto;
 			}
 
+/* Popup Image */
+	.imagepopup {
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+		.imagepopup:hover {
+			opacity: 0.7;
+		}
+
+/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 110px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+  
+		/* Modal Content (image) */
+		.modal-content {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+		}
+  
+		/* Caption of Modal Image */
+		#caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+		}
+  
+		/* Add Animation */
+		.modal-content, #caption {  
+			-webkit-animation-name: zoom;
+			-webkit-animation-duration: 0.6s;
+			animation-name: zoom;
+			animation-duration: 0.6s;
+		}
+  
+		@-webkit-keyframes zoom {
+			from {-webkit-transform:scale(0)} 
+			to {-webkit-transform:scale(1)}
+		}
+		
+		@keyframes zoom {
+			from {transform:scale(0)} 
+			to {transform:scale(1)}
+		}
+  
+		/* The Close Button */
+		.close {
+			position: absolute;
+			top: 45px;
+			right: 35px;
+			color: #f1f1f1;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		
+		.close:hover,
+		.close:focus {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
 /* Videos */
 
 	.videoWrapper {
@@ -2065,6 +2146,25 @@ input, select, textarea {
 			table.default tfoot {
 				border-top: solid 2px #e5e5e5;
 			}
+
+		table.list td:first-child{
+			width: 22%; 
+			vertical-align: middle;
+		}
+
+		table.list td{
+			padding: 10px 10px;
+		}
+
+		table.list tr:nth-child(odd){
+			background-color: #fafafa;
+		}
+
+		table.list img{
+			justify-content: center;
+			width: 80%;
+			margin: auto;
+		}
 
 /* Button */
 
@@ -2803,7 +2903,7 @@ input, select, textarea {
 
 		.carousel .noreel-large{
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
 			width: 100%;
 		}
 
@@ -2813,13 +2913,34 @@ input, select, textarea {
 		
 		.carousel .noreel-medium{
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
 			width: 100%;
 			text-align: center;
 		}
 
 			.carousel .noreel-medium > div{
 				text-align: center;
+			}
+
+		.carousel .noreel-small{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(max(14em, 100%/4), 1fr));
+			width: 100%;
+			text-align: center;
+		}
+
+			.carousel .noreel-small > div{
+				text-align: center;
+			}
+			
+			.carousel .noreel-small .image{
+				position: static;
+				width: inherit;
+				margin: 0;
+			}
+
+			.carousel .noreel-small article p{
+				margin: 0.5em;
 			}
 
 		.carousel article {
@@ -2836,6 +2957,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.75s ease-in-out;
 			transition: opacity 0.75s ease-in-out;
 		}
+		
 			.carousel.style2 article{
 				background-color: #f0f4f4;
 			}
@@ -2911,6 +3033,12 @@ input, select, textarea {
 				margin: 0em 1em 1em 1em;
 			}	
 
+			.carousel .noreel-small article{
+				width: 14em;
+				margin: 1em 0;
+				padding: 0;
+			}
+			
 	}
 
 /* Normal */
@@ -3045,7 +3173,7 @@ input, select, textarea {
 
 		.carousel .noreel-medium{
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
 			width: 100%;
 			text-align: center;
 		}
@@ -3425,6 +3553,13 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+			.carousel .noreel-small{
+				grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+			}
+
+			.carousel .noreel-small article {
+				width: 12em;
+			}
 	}
 
 	* {

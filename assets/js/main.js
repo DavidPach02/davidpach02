@@ -88,6 +88,9 @@
 				var $noreel = $t.children('.noreel-large');
 				if($noreel.length <= 0){
 					$noreel = $t.children('.noreel-medium');
+					if ($noreel.length <= 0){
+						$noreel = $t.children('.noreel-small');
+					}
 				}
 
 				var	$gridItems = $noreel.children('div');
