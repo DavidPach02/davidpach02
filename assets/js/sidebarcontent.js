@@ -74,7 +74,7 @@ for(let i = 0; i < 5; i++){
     var splittedInfo = targetItem.split("|")
     
     categoriesPicked += "<div class=\"col-4\"> <a href=\"" + splittedInfo[1] + "\" class=\"image fit\"><img src=\"" + splittedInfo[2] +"\" alt=\"\" /></a></div>"
-    categoriesPicked += "<div class=\"col-8\"><h4>" + categories[randCategoryIndex] + "</h4><p>" + splittedInfo[0] +"</p></div>"
+    categoriesPicked += "<div class=\"col-8\"><h4>" + categories[randCategoryIndex] + "</h4><p><a href=\"" + splittedInfo[1] + "\">" + splittedInfo[0] +"</a></p></div>"
 
     if (targetArray.length <= 0){
         categories.splice(randCategoryIndex, 1)
