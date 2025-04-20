@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Video Games - Matt vs Aliens</title>
+		<title>Professional Projects - Matt vs Aliens</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(3, 2)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -21,20 +21,23 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="games-videogames.html" id="logo">Video Games</a></h1>
+								<h1><a href="games-videogames.html" id="logo">Professional Projects</a></h1>
 							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -60,14 +65,26 @@
 								<article id="main">
 									<header>
 										<h2><a href="vg-mattvsaliens.html">Matt vs Aliens</a></h2>
-										<p>
-											Meet Matt, our dog hero, who needs to stop the alien invaders from totally abducting all humans on the planet.
-										</p>
 									</header>
-									<a href="vg-mattvsaliens.html" class="image featured"><img src="images/games/mattvsaliens/MattVsAliensBanner.png" alt="MvA Banner" /></a>
+									<img style="width: 100%;" class="imagepopup" src="images/games/mattvsaliens/MattVsAliensBanner.png" alt="MvA Banner" />
+									<p>
+										Meet Matt, our dog hero, who needs to stop the alien invaders from totally abducting all humans on the planet.
+									</p>
 									<p>
 										A long time ago, in a galaxy far, far away an alien world called Numbers was crumbling down and they set out to conquer new planets. Here comes Matt, the saviour of the world! Teach Matt how to add and subtract or else the aliens will be able to abduct all humans.
 									</p>
+
+									<section class="highlights">
+										<header>
+											<h3>Highlights</h3>
+										</header>
+										<p>
+											<ul>
+												<li>Add highlights here.</li>
+											</ul>
+										</p>
+									</section>
+									
 									<section>
 										<header>
 											<h3>Features</h3>
@@ -76,13 +93,13 @@
 											The goal of the game reduce the anomalous tile to zero (0). Each time you complete an anomalous tile, you get points or complete a section of the challenge. Try the timed challenges or complete all the portal challenges to save the world!
 										</p>
 										<div class="row">
-											<div class="col-6 col-12-mobile special">
-												<img src="images/games/mattvsaliens/mva-timed.gif" alt="MvA Timed Challenge" width="70%" object-fit="cover"/>
-												<p>Timed Challenges</p>
+											<div class="col-6 special" style="text-align: center;">
+												<img class="imagepopup" src="images/games/mattvsaliens/mva-timed.gif" alt="MvA Timed Challenge" width="70%" object-fit="cover"/>
+												<p style="text-align: center;">Timed Challenges</p>
 											</div>
-											<div class="col-6 col-12-mobile special">
-												<img src="images/games/mattvsaliens/mva-grid.gif" alt="MvA Grid Challenge" width="70%" object-fit="cover"/>
-												<p>Grid Challenges</p>
+											<div class="col-6 special" style="text-align: center;">
+												<img class="imagepopup" src="images/games/mattvsaliens/mva-grid.gif" alt="MvA Grid Challenge" width="70%" object-fit="cover"/>
+												<p style="text-align: center;">Grid Challenges</p>
 											</div>
 										</div>
 									</section>
@@ -96,22 +113,49 @@
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
-								<!--<hr class="first" />
 								<section>
-									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
-									</header>
-									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
-									</p>
-									<footer>
-										<a href="#" class="button">Learn More</a>
-									</footer>
-								</section>
-								<hr />-->
-								<section>
+									<div id="highlights">
+										<header>
+											<h3>Project Overview</h3>
+										</header>
+										<table>
+											<tbody>
+												<tr>
+													<td><strong>Type:</strong></td>
+													<td>Video Game</td>
+												</tr>
+												<tr>
+													<td><strong>Roles:</strong></td>
+													<td>Programmer</td>
+												</tr>
+												<tr>
+													<td><strong>Release Date:</strong></td>
+													<td>N/A</td>
+												</tr>
+												<tr>
+													<td><strong>Platforms:</strong></td>
+													<td>Mobile</td>
+												</tr>
+												<tr>
+													<td><strong>Engine:</strong></td>
+													<td>Unity 3D</td>
+												</tr>
+												<tr>
+													<td><strong>Languages:</strong></td>
+													<td>C#</td>
+												</tr>
+												<tr>
+													<td><strong>Tools:</strong></td>
+													<td>Photoshop</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<section>
+										<!--Divider-->
+									</section>
+
 									<header>
 										<h3>Other Projects</h3>
 									</header>
@@ -165,6 +209,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -175,8 +222,15 @@
 					</div>
 				</div>
 
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+
 				<!-- Carousel: Video Games -->
-				<section id="carousel" class="carousel">
+				<!--<section id="carousel" class="carousel">
 					<div class="reel">
 
 						<article>
@@ -184,7 +238,6 @@
 							<header>
 								<h3><a href="vg-snb.html">Skull and Bones</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -192,7 +245,6 @@
 							<header>
 								<h3><a href="vg-acmirage.html">Assassin's Creed Mirage</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -200,7 +252,6 @@
 							<header>
 								<h3><a href="vg-tybr.html">The Yellow Boat Reimagined</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -208,7 +259,6 @@
 							<header>
 								<h3><a href="vg-nutrimania.html">Nutrimania</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -216,7 +266,6 @@
 							<header>
 								<h3><a href="vg-mattvsaliens.html">Matt vs Aliens</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -224,7 +273,6 @@
 							<header>
 								<h3><a href="vg-rebelyon.html">Rebelyon</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -232,7 +280,6 @@
 							<header>
 								<h3><a href="vg-nostalgia.html">Nostalgia</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -240,11 +287,10 @@
 							<header>
 								<h3><a href="vg-cs09.html">Connected: Summer of '09</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 					</div>
-				</section>
+				</section>-->
 
 			<!-- Footer -->
 				<div id="footer">
@@ -291,6 +337,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script srC="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>

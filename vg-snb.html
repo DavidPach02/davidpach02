@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Video Games - Skull and Bones</title>
+		<title>Professional Projects - Skull and Bones</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(3, 2)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -21,20 +21,23 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="games-videogames.html" id="logo">Video Games</a></h1>
+								<h1><a href="games-videogames.html" id="logo">Professional Projects</a></h1>
 							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -60,32 +65,26 @@
 								<article id="main">
 									<header>
 										<h2><a href="vg-snb.html">Skull and Bones</a></h2>
-										<p>
-											Enter the perilous world of Skull and Bones, a co-op pirate open world action RPG experience, to become the most infamous pirate kingpin!
-										</p>
 									</header>
 									<div class="videoWrapper">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/OmDYo7MbQxo?si=LFBa7sUiKbEjtkHF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 									</div>
 									<p>
+										Enter the perilous world of Skull and Bones, a co-op pirate open world action RPG experience, to become the most infamous pirate kingpin!
+									</p>
+									<p>
 										With resource-rich merchant convoys sailing the Indian Ocean, pirates from across the world are driven into a feeding frenzy. Join the fray and face new, powerful enemies including the vicious Plague Lord Phillipe La Peste, Elite Warships, and more. Fight for your share of loot amidst the first season of Skull and Bones, Raging Tides.
 									</p>
-									<section>
+									<section class="highlights">
 										<header>
-											<h3>Contributions</h3>
+											<h3>Highlights</h3>
 										</header>
 										<p>
 											<ul>
-												<li>Made validation and checker tools to improve the pipeline.</li>
+												<li>Made validation and checker tools to improve the workflow and pipeline.</li>
 												<li>Enforced rules and guidelines for the team to follow best practices before data submission.</li>
 											</ul>
 										</p>
-									</section>
-									<section>
-										<ul class="icons">
-											<li><a href="https://store.playstation.com/en-us/product/UP0001-PPSA02202_00-GAME000000000000" class="icon brands fa-playstation" target="_blank"><span class="label">Playstation</span></a></li>
-											<li><a href="https://www.ubisoft.com/en-sg/game/skull-and-bones/season-1" class="icon solid fa-link" target="_blank"><span class="label">Link</span></a></li>
-										</ul>
 									</section>
 								</article>
 							</div>
@@ -106,6 +105,49 @@
 								</section>
 								<hr />-->
 								<section>
+									<div id="highlights">
+										<header>
+											<h3>Project Overview</h3>
+										</header>
+										<table>
+											<tbody>
+												<tr>
+													<td><strong>Type:</strong></td>
+													<td>Video Game</td>
+												</tr>
+												<tr>
+													<td><strong>Roles:</strong></td>
+													<td>Technical Designer</td>
+												</tr>
+												<tr>
+													<td><strong>Release Date:</strong></td>
+													<td>February 6, 2024</td>
+												</tr>
+												<tr>
+													<td><strong>Platforms:</strong></td>
+													<td>PC<br>Console</td>
+												</tr>
+												<tr>
+													<td><strong>Engine:</strong></td>
+													<td>Ubisoft Anvil</td>
+												</tr>
+												<tr>
+													<td><strong>Languages:</strong></td>
+													<td>C#</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<br>
+									<ul class="icons">
+										<li><a href="https://store.playstation.com/en-us/product/UP0001-PPSA02202_00-GAME000000000000" class="icon brands fa-playstation" target="_blank"><span class="label">Playstation</span></a></li>
+										<li><a href="https://www.ubisoft.com/en-sg/game/skull-and-bones/season-1" class="icon solid fa-link" target="_blank"><span class="label">Link</span></a></li>
+									</ul>
+									<section>
+										<!--Divider-->
+									</section>
+
 									<header>
 										<h3>Other Projects</h3>
 									</header>
@@ -159,6 +201,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -170,7 +215,7 @@
 				</div>
 
 				<!-- Carousel: Video Games -->
-				<section id="carousel" class="carousel">
+				<!--<section id="carousel" class="carousel">
 					<div class="reel">
 
 						<article>
@@ -178,7 +223,6 @@
 							<header>
 								<h3><a href="vg-snb.html">Skull and Bones</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -186,7 +230,6 @@
 							<header>
 								<h3><a href="vg-acmirage.html">Assassin's Creed Mirage</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -194,7 +237,6 @@
 							<header>
 								<h3><a href="vg-tybr.html">The Yellow Boat Reimagined</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -202,7 +244,6 @@
 							<header>
 								<h3><a href="vg-nutrimania.html">Nutrimania</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -210,7 +251,6 @@
 							<header>
 								<h3><a href="vg-mattvsaliens.html">Matt vs Aliens</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -218,7 +258,6 @@
 							<header>
 								<h3><a href="vg-rebelyon.html">Rebelyon</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -226,7 +265,6 @@
 							<header>
 								<h3><a href="vg-nostalgia.html">Nostalgia</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -234,11 +272,10 @@
 							<header>
 								<h3><a href="vg-cs09.html">Connected: Summer of '09</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 					</div>
-				</section>
+				</section>-->
 
 			<!-- Footer -->
 				<div id="footer">
