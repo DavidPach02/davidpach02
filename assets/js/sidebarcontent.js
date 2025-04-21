@@ -92,7 +92,7 @@ function loadRandomGames(fillerContentCount, sameContentCount, exclusions){
     // Add filler content
     for(let i = 0; i < fillerContentCount; i++){
         var randCategoryIndex = Math.floor(Math.random() * categories.length);
-        console.log(randCategoryIndex + " " + categories.length);
+        //console.log(randCategoryIndex + " " + categories.length);
         var targetArray = GetArrayFromName(categories[randCategoryIndex])
         var targetItem = GetRandomItemFromArray(targetArray)
         var splittedInfo = targetItem.split("|")
@@ -114,7 +114,7 @@ function loadRandomGames(fillerContentCount, sameContentCount, exclusions){
 function RemoveInstance(targetArray, pageName){
     for(let i = 0; i < targetArray.length; i++){
         var info = targetArray[i].split("|");
-        console.log(pageName + " " + info[1]);
+        //console.log(pageName + " " + info[1]);
 
         if (pageName == info[1]){
             targetArray.splice(i, 1);

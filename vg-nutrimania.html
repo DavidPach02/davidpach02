@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Video Games - Nutrimania</title>
+		<title>School Projects - Nutrimania</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(3, 2)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -21,20 +21,23 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="games-videogames.html" id="logo">Video Games</a></h1>
+								<h1><a href="games-schoolprojects.html" id="logo">School Projects</a></h1>
 							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -60,17 +65,29 @@
 								<article id="main">
 									<header>
 										<h2><a href="vg-nutrimania.html">Nutrimania</a></h2>
-										<p>
-											Stop world hunger one town at a time!
-										</p>
 									</header>
 									<div class="videoWrapper">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/01A3FeX3chM?si=UwBrvDca2u0a7U1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 									</div>
 									<p>
+										Stop world hunger one town at a time!
+									</p>
+									<p>
 										Prepare, cook and serve nutritious food for your customers throughout the day. Take your time in developing the town you are currently residing in. See the change that starts within you and you might change the world.
 									</p>
-									<img src="images/games/nutrimania/Nutrimania-Banner.png" width="100%"/>
+
+									<section class="highlights">
+										<header>
+											<h3>Highlights</h3>
+										</header>
+										<p>
+											<ul>
+												<li>Add highlights.</li>
+											</ul>
+										</p>
+									</section>
+
+									<img class="imagepopup" src="images/games/nutrimania/Nutrimania-Banner.png" width="100%" alt="Nutrimania Banner"/>
 									<section>
 										<header>
 											<h3>Features</h3>
@@ -89,32 +106,32 @@
 											<!-- Full-width images with number text -->
 											<div class="mySlides">
 											  <div class="numbertext">1 / 6</div>
-												<img src="images/games/nutrimania/Title.png" style="width:100%">
+												<img class="imagepopup" src="images/games/nutrimania/Title.png" style="width:100%" alt="Title Screen">
 											</div>
 										  
 											<div class="mySlides">
 												<div class="numbertext">2 / 6</div>
-												  <img src="images/games/nutrimania/Level1Layout.png" style="width:100%">
+												  <img class="imagepopup" src="images/games/nutrimania/Level1Layout.png" style="width:100%" alt="Feeding Program Section">
 											</div>
 										  
 											<div class="mySlides">
 												<div class="numbertext">3 / 6</div>
-												<img src="images/games/nutrimania/FeedEndScreen.png" style="width:100%">
+												<img class="imagepopup" src="images/games/nutrimania/FeedEndScreen.png" style="width:100%" alt="Feeding Program End">
 											</div>
 
 											<div class="mySlides">
 												<div class="numbertext">4 / 6</div>
-												<img src="images/games/nutrimania/LiveTutorial.png" style="width:100%">
+												<img class="imagepopup" src="images/games/nutrimania/LiveTutorial.png" style="width:100%" alt="Livelihood Program Section">
 											</div>
 
 											<div class="mySlides">
 												<div class="numbertext">5 / 6</div>
-												<img src="images/games/nutrimania/PosterFinal.png" style="width:100%">
+												<img class="imagepopup" src="images/games/nutrimania/PosterFinal.png" style="width:100%" alt="Nutrimania Poster">
 											</div>
 
 											<div class="mySlides">
 												<div class="numbertext">6 / 6</div>
-												<img src="images/games/nutrimania/team.jpg" style="width:100%">
+												<img class="imagepopup" src="images/games/nutrimania/team.jpg" style="width:100%" alt="Chaotic Bot Team w/ Adviser">
 											</div>
 										  
 											<!-- Next and previous buttons -->
@@ -157,37 +174,64 @@
 											Nutrimania is a time management cooking game. It is designed in a way where players will assume the role of an NGO worker who will serve food that fits their nutritional status. After the day, they will gain funds that will give them the opportunity to build livelihood programs for them.
 										</p>
 									</section>
-									<section>
-										<ul class="icons">
-											<li><a href="https://davidpach02.itch.io/nutrimania" class="icon brands fa-itch-io" target="_blank"><span class="label">Itch.io</span></a></li>
-											<li><a href="https://www.facebook.com/NutrimaniaChaoticBot" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-										</ul>
-									</section>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
-								<!--<hr class="first" />
 								<section>
-									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
-									</header>
-									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
-									</p>
-									<footer>
-										<a href="#" class="button">Learn More</a>
-									</footer>
-								</section>
-								<hr />-->
-								<section>
+									<div id="highlights">
+										<header>
+											<h3>Project Overview</h3>
+										</header>
+										<table>
+											<tbody>
+												<tr>
+													<td><strong>Type:</strong></td>
+													<td>Video Game</td>
+												</tr>
+												<tr>
+													<td><strong>Roles:</strong></td>
+													<td>
+														Game Designer <br/>
+														Project Manager <br/>
+														UI Artist
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Release Date:</strong></td>
+													<td>Unreleased</td>
+												</tr>
+												<tr>
+													<td><strong>Platforms:</strong></td>
+													<td>PC</td>
+												</tr>
+												<tr>
+													<td><strong>Engine:</strong></td>
+													<td>Unreal Engine</td>
+												</tr>
+												<tr>
+													<td><strong>Tools:</strong></td>
+													<td>
+														Photoshop<br/>
+														Excel
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<br>
+									<ul class="icons">
+										<li><a href="https://davidpach02.itch.io/nutrimania" class="icon brands fa-itch-io" target="_blank"><span class="label">Itch.io</span></a></li>
+										<li><a href="https://www.facebook.com/NutrimaniaChaoticBot" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+									</ul>
+
+									<section>
+										<!--Divider-->
+									</section>
+
 									<header>
 										<h3>Other Projects</h3>
 									</header>
-									<!--<p>
-										Tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>-->
 									<div class="row gtr-50" id="sample">
 										<!--<div class="col-4">
 											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
@@ -235,6 +279,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -246,7 +293,7 @@
 				</div>
 
 				<!-- Carousel: Video Games -->
-				<section id="carousel" class="carousel">
+				<!--<section id="carousel" class="carousel">
 					<div class="reel">
 
 						<article>
@@ -254,7 +301,6 @@
 							<header>
 								<h3><a href="vg-snb.html">Skull and Bones</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -262,7 +308,6 @@
 							<header>
 								<h3><a href="vg-acmirage.html">Assassin's Creed Mirage</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -270,7 +315,6 @@
 							<header>
 								<h3><a href="vg-tybr.html">The Yellow Boat Reimagined</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -278,7 +322,6 @@
 							<header>
 								<h3><a href="vg-nutrimania.html">Nutrimania</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -286,7 +329,6 @@
 							<header>
 								<h3><a href="vg-mattvsaliens.html">Matt vs Aliens</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -294,7 +336,6 @@
 							<header>
 								<h3><a href="vg-rebelyon.html">Rebelyon</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -302,7 +343,6 @@
 							<header>
 								<h3><a href="vg-nostalgia.html">Nostalgia</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -310,11 +350,17 @@
 							<header>
 								<h3><a href="vg-cs09.html">Connected: Summer of '09</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 					</div>
-				</section>
+				</section>-->
+
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -361,6 +407,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script src="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>

@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Video Games - Connected: Summer of '09</title>
+		<title>School Projects - Connected: Summer of '09</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(3, 2)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -21,20 +21,23 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="games-videogames.html" id="logo">Video Games</a></h1>
+								<h1><a href="games-schoolprojects.html" id="logo">School Projects</a></h1>
 							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -60,41 +65,54 @@
 								<article id="main">
 									<header>
 										<h2><a href="vg-cs09.html">Connected: Summer of '09</a></h2>
-										<p>
-											In a quiet summer of 2009, friendships were tested among a group of friends when an anonymous texter threatened to permanently keep them offline one by one.
-										</p>
+										
 									</header>
-									<a href="vg-cs09.html" class="image featured"><img src="images/scrolley/vg/scrolley-vg-cs09.jpg" alt="Nostalgia title" /></a>
+									<img class="imagepopup" style="width: 100%;" src="images/scrolley/vg/scrolley-vg-cs09.jpg" alt="Connected Summer of '09' title" />
+									<p>
+										In a quiet summer of 2009, friendships were tested among a group of friends when an anonymous texter threatened to permanently keep them offline one by one.
+									</p>
 									<p>
 										Connected: Summer of ’09 is a mystery visual novel about a group of friends and an anonymous killer. It explores and breaks the concepts of trust and loyalty within the bounds of chatboxes.
 									</p>
+
+									<section class="highlights">
+										<header>
+											<h3>Highlights</h3>
+										</header>
+										<p>
+											<ul>
+												<li>Add highlights here.</li>
+											</ul>
+										</p>
+									</section>
+
 									<section>
 										<div class="container2">
 
 											<!-- Full-width images with number text -->
 											<div class="mySlides">
 											  <div class="numbertext">1 / 5</div>
-												<img src="images/games/cs09/articlepage.png" style="width:100%">
+												<img class="imagepopup" src="images/games/cs09/articlepage.png" style="width:100%" alt="Article page">
 											</div>
 										  
 											<div class="mySlides">
 												<div class="numbertext">2 / 5</div>
-												  <img src="images/games/cs09/honors09.png" style="width:100%">
+												  <img class="imagepopup" src="images/games/cs09/honors09.png" style="width:100%" alt="Group chat">
 											</div>
 										  
 											<div class="mySlides">
 												<div class="numbertext">3 / 5</div>
-												<img src="images/games/cs09/spotitunes.png" style="width:100%">
+												<img class="imagepopup" src="images/games/cs09/spotitunes.png" style="width:100%" alt="Music player">
 											</div>
 
 											<div class="mySlides">
 												<div class="numbertext">4 / 5</div>
-												<img src="images/games/cs09/elipage.png" style="width:100%">
+												<img class="imagepopup" src="images/games/cs09/elipage.png" style="width:100%" alt="Eli's chatbox">
 											</div>
 
 											<div class="mySlides">
 												<div class="numbertext">5 / 5</div>
-												<img src="images/games/cs09/maripage.png" style="width:100%">
+												<img class="imagepopup" src="images/games/cs09/maripage.png" style="width:100%" alt="Mari's chatbox">
 											</div>
 										  
 											<!-- Next and previous buttons -->
@@ -126,6 +144,7 @@
 											</div>
 										</div>
 									</section>
+									
 									<section>
 										<header>
 											<h3>Personal Notes</h3>
@@ -156,22 +175,42 @@
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
-								<!--<hr class="first" />
 								<section>
-									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
-									</header>
-									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
-									</p>
-									<footer>
-										<a href="#" class="button">Learn More</a>
-									</footer>
-								</section>
-								<hr />-->
-								<section>
+									<div id="highlights">
+										<header>
+											<h3>Project Overview</h3>
+										</header>
+										<table>
+											<tbody>
+												<tr>
+													<td><strong>Type:</strong></td>
+													<td>Video Game</td>
+												</tr>
+												<tr>
+													<td><strong>Roles:</strong></td>
+													<td>Game Designer <br/>
+														Programmer</td>
+												</tr>
+												<tr>
+													<td><strong>Release Date:</strong></td>
+													<td>Unreleased</td>
+												</tr>
+												<tr>
+													<td><strong>Platforms:</strong></td>
+													<td>PC</td>
+												</tr>
+												<tr>
+													<td><strong>Engine:</strong></td>
+													<td>Unity</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+	
+									<section>
+										<!--Divider-->
+									</section>
+
 									<header>
 										<h3>Other Projects</h3>
 									</header>
@@ -225,6 +264,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -236,7 +278,7 @@
 				</div>
 
 				<!-- Carousel: Video Games -->
-				<section id="carousel" class="carousel">
+				<!--<section id="carousel" class="carousel">
 					<div class="reel">
 
 						<article>
@@ -244,7 +286,6 @@
 							<header>
 								<h3><a href="vg-snb.html">Skull and Bones</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -252,7 +293,6 @@
 							<header>
 								<h3><a href="vg-acmirage.html">Assassin's Creed Mirage</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -260,7 +300,6 @@
 							<header>
 								<h3><a href="vg-tybr.html">The Yellow Boat Reimagined</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -268,7 +307,6 @@
 							<header>
 								<h3><a href="vg-nutrimania.html">Nutrimania</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -276,7 +314,6 @@
 							<header>
 								<h3><a href="vg-mattvsaliens.html">Matt vs Aliens</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -284,7 +321,6 @@
 							<header>
 								<h3><a href="vg-rebelyon.html">Rebelyon</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -292,7 +328,6 @@
 							<header>
 								<h3><a href="vg-nostalgia.html">Nostalgia</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -300,11 +335,17 @@
 							<header>
 								<h3><a href="vg-cs09.html">Connected: Summer of '09</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 					</div>
-				</section>
+				</section>-->
+
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -351,6 +392,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script src="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>
