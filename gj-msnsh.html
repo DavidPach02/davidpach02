@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(3, 2)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -27,14 +27,17 @@
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -60,14 +65,25 @@
 								<article id="main">
 									<header>
 										<h2><a href="gj-msnsh.html">Mga Mensaheng Nasagip sa Hangin</a></h2>
-										<p>
-											Tune your radio and discover the past.
-										</p>
 									</header>
-									<a href="gj-msnsh.html" class="image featured"><img src="images/games/msnsh/titlescreen.jpg" alt="MSNSH Title" /></a>
+									<img class="imagepopup" style="width: 100%;" src="images/games/msnsh/titlescreen.jpg" alt="Mga Salitang Nasagip sa Hangin Title Screen" />
+									<p>
+										Tune your radio and discover the past.
+									</p>
 									<p>
 										A timing-based game where you control a radio tuner during the Marcos regime. The radio reveals important facts about the regime and a story about a man living through it. A Global Gam Jam 2017 submission with the theme of <strong>Waves</strong>.
 									</p>
+
+									<section class="highlights">
+										<header>
+											<h3>Highlights</h3>
+										</header>
+										<p>
+											<ul>
+												<li>Add highlights.</li>
+											</ul>
+										</p>
+									</section>
 
 									<section>
 										<header>
@@ -82,45 +98,57 @@
 											<li>Get some sleep!</li>
 										</ul>
 									</section>
-
-									<section>
-										<!--<header>
-											<h3>Get the game</h3>
-										</header>-->
-										<ul class="icons">
-											<li><a href="https://v3.globalgamejam.org/2017/games/mga-salitang-nasagip-sa-hangin-words-caught-air" class="icon solid fa-link" target="_blank"><span class="label">Global Game Jam</span></a></li>
-											<!--<li><a href="https://twitter.com/pachpacheco02" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-											<li><a href="https://www.instagram.com/pachpacheco02" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-											<li><a href="https://www.twitch.tv/davidpach02" class="icon brands fa-twitch" target="_blank"><span class="label">Twitch</span></a></li>-->
-										</ul>
-									</section>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
-								<!--<hr class="first" />
 								<section>
-									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
-									</header>
-									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
-									</p>
-									<footer>
-										<a href="#" class="button">Learn More</a>
-									</footer>
-								</section>
-								<hr />-->
-								<section>
+									<div id="highlights">
+										<header>
+											<h3>Project Overview</h3>
+										</header>
+										<table>
+											<tbody>
+												<tr>
+													<td><strong>Type:</strong></td>
+													<td>Video Game</td>
+												</tr>
+												<tr>
+													<td><strong>Roles:</strong></td>
+													<td>
+														Game Designer<br/>
+														Programmer
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Release Date:</strong></td>
+													<td>January 22, 2017</td>
+												</tr>
+												<tr>
+													<td><strong>Platforms:</strong></td>
+													<td>PC</td>
+												</tr>
+												<tr>
+													<td><strong>Engine:</strong></td>
+													<td>Unity</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<br>
+									<ul class="icons">
+										<li><a href="https://v3.globalgamejam.org/2017/games/mga-salitang-nasagip-sa-hangin-words-caught-air" class="icon solid fa-link" target="_blank"><span class="label">Global Game Jam</span></a></li>
+									</ul>
+
+									<section>
+										<!--Divider-->
+									</section>
+
 									<header>
 										<h3>Other Projects</h3>
 									</header>
-									<!--<p>
-										Tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>-->
 									<div class="row gtr-50" id="sample">
-										<div class="col-4">
+										<!--<div class="col-4">
 											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
@@ -164,7 +192,10 @@
 											<p>
 												Amet nullam fringilla nibh nulla convallis tique ante proin.
 											</p>
-										</div>
+										</div>-->
+									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
 									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
@@ -177,7 +208,7 @@
 				</div>
 
 				<!-- Carousel: Game Jams -->
-				<section id="carousel" class="carousel">
+				<!--<section id="carousel" class="carousel">
 					<div class="reel">
 
 						<article>
@@ -185,7 +216,6 @@
 							<header>
 								<h3><a href="gj-keeptheballrolling.html">Keep the Ball Rolling</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -193,7 +223,6 @@
 							<header>
 								<h3><a href="gj-parasomnia.html">Parasomnia</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -201,7 +230,6 @@
 							<header>
 								<h3><a href="gj-printsprinter.html">Print Sprinter</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -209,7 +237,6 @@
 							<header>
 								<h3><a href="gj-refordef.html">Refuse or Defuse</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -217,7 +244,6 @@
 							<header>
 								<h3><a href="gj-msnsh.html">MSNSH</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>
 
 						<article>
@@ -225,11 +251,17 @@
 							<header>
 								<h3><a href="gj-nailedit.html">Nailed It!!!</a></h3>
 							</header>
-							<!--<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>-->
 						</article>						
 
 					</div>
-				</section>
+				</section>-->
+
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -276,6 +308,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script src="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>
