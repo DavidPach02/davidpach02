@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(5)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -27,14 +27,17 @@
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -79,7 +84,7 @@
 											There’s always that designer-to-developer moment when I thought that I got a great idea but realizing that I must execute it in code and then I get all disappointed. Sometimes imagining things are not as easy as actually putting them into code. To put it simply, my incapability of executing got in the way of the process. So, I had to give up those ideas given my skill set and the fact that I was initially planning on going as a solo group (it wasn’t until later that my friend joined in).
 										</p>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-02152019/TyperShark2.gif" alt="Typer Shark Proto" width="350px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-02152019/TyperShark2.gif" alt="Typer Shark Practice Prototype" width="350px"  object-fit="cover"/>
 										</div>
 										<p>
 											But that doesn’t stop me there as suddenly an idea hit me. I thought “why not use what I already know then transform it into a game that would fit the theme?” Coincidentally, weeks before the event, I was experimenting on a game with a typing mechanic similar to Typer Shark (PopCap Games, 2003). That’s the major decision point that ultimately steered the game’s direction – a game with minimal interaction, continuous, and involves a lot of typing.
@@ -95,13 +100,13 @@
 											<h3>Scope small then scope smaller</h3>
 										</header>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-02152019/DesProc-1.JPG" alt="Design Process 01" width="350px" object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-02152019/DesProc-1.JPG" alt="Design Process 01" width="350px" object-fit="cover"/>
 										</div>
 										<p>
 											This might sound pessimistic but just as any game development process this will eventually happen. Before Print Sprinter became a single looping round with two characters, it was originally planned as a fully realized time management game with three levels, three customers, three card types and three font styles. Even though only the last two components were met, the final product was still a satisfying one. There was a process I had to undergo just to make sure that: 1) the developers and the players would be at least satisfied; 2) make the game seem complete. 
 										</p>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-02152019/DesProc-2.JPG" alt="Design Process 02" width="350px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-02152019/DesProc-2.JPG" alt="Design Process 02" width="350px"  object-fit="cover"/>
 										</div>
 										<p>
 											The first step was to accept that what I initially planned was not going to happen then the rest was just a series of choices. All I had to do was further refine what I really wanted from the game. So, from that small scope, it went even smaller by choosing the features that would fulfill the two aforementioned criteria. The game essentially became a looping game scene that highlights all the main mechanics. A tutorial was also imperative so that anyone can play the game without telling them what to do. Then bonus content came along when my friend joined in to add sounds, music and some optional character models with animations. Again, just utilizing what we have and know, we still managed to deliver our vision.
@@ -115,7 +120,7 @@
 										<header>
 											<h3>Conclusion</h3>
 										</header>
-										<img src="images/blog/blog-des-02152019/Jam4.gif" alt="Print Sprinter Sample GIF" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-02152019/Jam4.gif" alt="Print Sprinter In-Game GIF" width="100%" object-fit="cover"/>
 										<p>
 											Overall, the game jam experience was unnerving in its own way but ultimately satisfying. I get to play around with familiar things and cross small boundaries I never thought I could do. For a developer who is unmotivated to create his own game, this gave me the right push. With that in mind, I would gladly join another one in the future.
 										</p>
@@ -127,12 +132,60 @@
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
 								<section>
+								<header>
+									<h3><span class="label"><a href="extra-blog.html" id="logo">Read More</a></span></h>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-03252019B.html">[TYBR] Map Prototypes</a>
+											</header>
+											<span class="timestamp">March 25, 2019</span>
+										</article>
+									</li>
+									
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-03252019A.html">[TYBR] Gameplay Flow BTS</a>
+											</header>
+											<span class="timestamp">March 25, 2019</span>
+										</article>
+									</li>
+
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-02152019.html">Two Major Takeaways from my First Itch.io Game Jam</a>
+											</header>
+											<span class="timestamp">February 15, 2019</span>
+										</article>
+									</li>
+									<!--<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Feugiat lorem ipsum</a></h3>
+											</header>
+											<span class="timestamp">2 days ago</span>
+										</article>
+									</li>-->
+								</ul>
+								<div class="more">
+									<a href="extra-blog.html">See More  ></a>
+								</div>
+								</section>
+
+								<!--Divider-->
+								<section>
+									<br/>
+									<br/>
+								</section>
+
+								<section>
 									<header>
 										<h3>Other Projects</h3>
 									</header>
-									<!--<p>
-										Tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>-->
 									<div class="row gtr-50" id="sample">
 										<!--<div class="col-4">
 											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
@@ -180,6 +233,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -188,6 +244,13 @@
 						</div>
 						<!--<hr />-->
 					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
 				</div>
 
 			<!-- Footer -->
@@ -235,6 +298,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script src="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>

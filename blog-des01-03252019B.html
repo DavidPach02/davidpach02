@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="right-sidebar is-preload">
+	<body class="right-sidebar is-preload" onload="loadRandomGames(5)">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -27,14 +27,17 @@
 
 					<!-- Nav -->
 						<nav id="nav">
+							<div style="width: 10%; min-width: 3%;"></div>
+							<span><a href="index.html">DAVID PACHECO</a></span>
+							<div style="width: 100%; min-width: 7%;"></div>
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-									<a href="games.html">Games</a>
+									<a href="games.html">Projects</a>
 									<ul>
-										<li><a href="games-videogames.html">Video Games</a></li>
+										<li><a href="games-professionalprojects.html">Professional Projects</a></li>
+										<li><a href="games-schoolprojects.html">School Projects</a></li>
 										<li><a href="games-gamejams.html">Game Jams</a></li>
-										<li><a href="games-tabletopgames.html">Tabletop Games</a></li>
 									</ul>
 								</li>
 								<li>
@@ -45,8 +48,10 @@
 										<li><a href="extra-video.html">Video Editing</a></li>
 									</ul>
 								</li>
+								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
+							<div style="width: 10%; min-width: 3%;"></div>
 						</nav>
 
 				</div>
@@ -73,7 +78,7 @@
 											<h3>The Player Constraint</h3>
 										</header>
 										<div class="col-6 col-12-mobile special" style="float: left; margin: 10px 25px 0 0;">
-											<img src="images/blog/blog-des-03252019B/PlayerConstraint.png" alt="Player Constraint" width="330px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-03252019B/PlayerConstraint.png" alt="Player Constraint" width="330px"  object-fit="cover"/>
 										</div>
 										<p>
 											There will be a symbol like this placed in every map designs which represents the major player constraint and serves multiple purposes.
@@ -93,15 +98,15 @@
 										<header>
 											<h3>Mini Caves</h3>
 										</header>
-										<img src="images/blog/blog-des-03252019B/MiniCaves-Top.jpg" alt="Mini Caves Top View" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/MiniCaves-Top.jpg" alt="Mini Caves Top View" width="100%" object-fit="cover"/>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-03252019B/MiniCaves-AltPath.jpg" alt="Mini Caves Alt Path" width="330px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-03252019B/MiniCaves-AltPath.jpg" alt="Mini Caves Alt Path" width="330px"  object-fit="cover"/>
 										</div>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-03252019B/MiniCaves-Front.jpg" alt="Mini Caves Front" width="330px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-03252019B/MiniCaves-Front.jpg" alt="Mini Caves Front" width="330px"  object-fit="cover"/>
 										</div>
 										<div class="col-6 col-12-mobile special" style="float: right; margin: 10px 0 10px 25px;">
-											<img src="images/blog/blog-des-03252019B/MiniCaves-MainPath.jpg" alt="Mini Caves Main Path" width="330px"  object-fit="cover"/>
+											<img class="imagepopup" src="images/blog/blog-des-03252019B/MiniCaves-MainPath.jpg" alt="Mini Caves Main Path" width="330px"  object-fit="cover"/>
 										</div>
 										
 										<p>
@@ -121,7 +126,7 @@
 										<header>
 											<h3>River Pulley</h3>
 										</header>
-										<img src="images/blog/blog-des-03252019B/RiverPulley-Annot.JPG" alt="River Pulley Level" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/RiverPulley-Annot.JPG" alt="River Pulley Level" width="100%" object-fit="cover"/>
 										<p>
 											When I made this map, I was thinking of how I can magnify the dangers in the game. So the idea here is that there will be a scripted event when the pulley cart breaks and the players need to keep themselves safe through the gushing river. They can do this by climbing up walls and climbing ashore.
 										</p>
@@ -131,7 +136,7 @@
 										<header>
 											<h3>Cliff River</h3>
 										</header>
-										<img src="images/blog/blog-des-03252019B/CliffRiver-Annot.JPG" alt="Cliff River Level" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/CliffRiver-Annot.JPG" alt="Cliff River Level" width="100%" object-fit="cover"/>
 										<p>
 											This map comes right after the River-Pulley level. They will now be challenged into doing lateral climbing movements and flinging themselves over to safe areas. By far, I would say that this is the most intricate map I’ve thought of for a VR game. Now, looking at it in a fresh perspective, this would really pose quite a challenge in implementing since there will be scripted events, timed events and alternative paths that split and converge.
 										</p>
@@ -141,7 +146,7 @@
 										<header>
 											<h3>Swamp</h3>
 										</header>
-										<img src="images/blog/blog-des-03252019B/Swamp-Revised.jpg" alt="Swamp Level" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/Swamp-Revised.jpg" alt="Swamp Level" width="100%" object-fit="cover"/>
 										<p>
 											This map is actually an experiment on putting in colors to denote height references. I tried my best to be consistent and logical in doing these kinds of maps since my major was not architecture. I had to learn it out of sheer passion in the hopes that it would be useful in the future.
 										</p>
@@ -156,13 +161,13 @@
 										</p>
 										<div class="row">
 											<div class="col-6 col-12-mobile special">
-												<img src="images/blog/blog-des-03252019B/Area03A-Annot.JPG" alt="Cliff Variation A" width="100%" object-fit="cover"/>
+												<img class="imagepopup" src="images/blog/blog-des-03252019B/Area03A-Annot.JPG" alt="Cliff Variation A" width="100%" object-fit="cover"/>
 												<p>
 													This first one is actually quite ambitious as I designed it to have 3 paths with varying degrees of rewards for each. Additionally, there are two exit points that eventually converge on the next area.
 												</p>
 											</div>
 											<div class="col-6 col-12-mobile special">
-												<img src="images/blog/blog-des-03252019B/Area03B-Annot.JPG" alt="Cliff Variation B" width="100%" object-fit="cover"/>
+												<img class="imagepopup" src="images/blog/blog-des-03252019B/Area03B-Annot.JPG" alt="Cliff Variation B" width="100%" object-fit="cover"/>
 												<p>
 													While the second one streamlines the map to its raw parts. It still delivers the main idea of climbing; however, I focused on clarity and simplicity of the paths.
 												</p>
@@ -177,12 +182,63 @@
 										<p>
 											Here is the evolution of the main game map from the simplest to the most detailed parts.
 										</p>
-										<img src="images/blog/blog-des-03252019B/MainMapA.JPG" alt="Main Map" width="100%" object-fit="cover"/>
-										<img src="images/blog/blog-des-03252019B/MainMapB.JPG" alt="Main Map Streamlined" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/MainMapA.JPG" alt="Main Map" width="100%" object-fit="cover"/>
+										<img class="imagepopup" src="images/blog/blog-des-03252019B/MainMapB.JPG" alt="Main Map Streamlined" width="100%" object-fit="cover"/>
 									</section>									
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
+								<section>
+								<header>
+									<h3><span class="label"><a href="extra-blog.html" id="logo">Read More</a></span></h>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-03252019B.html">[TYBR] Map Prototypes</a>
+											</header>
+											<span class="timestamp">March 25, 2019</span>
+										</article>
+									</li>
+									
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-03252019A.html">[TYBR] Gameplay Flow BTS</a>
+											</header>
+											<span class="timestamp">March 25, 2019</span>
+										</article>
+									</li>
+
+									<li>
+										<article class="post stub">
+											<header>
+												<a href="blog-des01-02152019.html">Two Major Takeaways from my First Itch.io Game Jam</a>
+											</header>
+											<span class="timestamp">February 15, 2019</span>
+										</article>
+									</li>
+									<!--<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="#">Feugiat lorem ipsum</a></h3>
+											</header>
+											<span class="timestamp">2 days ago</span>
+										</article>
+									</li>-->
+								</ul>
+								<div class="more">
+									<a href="extra-blog.html">See More  ></a>
+								</div>
+								</section>
+
+								<!--Divider-->
+								<section>
+									<br/>
+									<br/>
+								</section>
+								
 								<section>
 									<header>
 										<h3>Other Projects</h3>
@@ -237,6 +293,9 @@
 											</p>
 										</div>-->
 									</div>
+									<div class="more">
+										<a href="games.html">See More  ></a>
+									</div>
 									<!--<footer>
 										<a href="#" class="button">Magna Adipiscing</a>
 									</footer>-->
@@ -245,6 +304,13 @@
 						</div>
 						<!--<hr />-->
 					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
 				</div>
 
 			<!-- Footer -->
@@ -292,6 +358,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/sidebarcontent.js"></script>
 			<script src="assets/js/slideshow.js"></script>
+			<script src="assets/js/imagepopup.js"></script>
 
 	</body>
 </html>
