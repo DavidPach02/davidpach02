@@ -70,10 +70,7 @@
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/OmDYo7MbQxo?si=LFBa7sUiKbEjtkHF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 									</div>
 									<p>
-										Enter the perilous world of Skull and Bones, a co-op pirate open world action RPG experience, to become the most infamous pirate kingpin!
-									</p>
-									<p>
-										With resource-rich merchant convoys sailing the Indian Ocean, pirates from across the world are driven into a feeding frenzy. Join the fray and face new, powerful enemies including the vicious Plague Lord Phillipe La Peste, Elite Warships, and more. Fight for your share of loot amidst the first season of Skull and Bones, Raging Tides.
+										Enter the perilous world of Skull and Bones, a co-op pirate open world action RPG experience, to become the most infamous pirate kingpin! With resource-rich merchant convoys sailing the Indian Ocean, pirates from across the world are driven into a feeding frenzy. Join the fray and face new, powerful enemies including the vicious Plague Lord Phillipe La Peste, Elite Warships, and more. Fight for your share of loot amidst the first season of Skull and Bones, Raging Tides.
 									</p>
 									<section class="highlights">
 										<header>
@@ -81,11 +78,81 @@
 										</header>
 										<p>
 											<ul>
-												<li>Made validation and checker tools to improve the workflow and pipeline.</li>
-												<li>Enforced rules and guidelines for the team to follow best practices before data submission.</li>
+												<li>Created a <a href="#tl-subcop" class="scrolly">Submission Tool</a> to streamline the tracking workflow by consolidating key peer submission information for thread posting.</li>
+												<li>Developed a nightly <a href="#tl-heatmap" class="scrolly">Heatmap Reporter Tool</a> that generates a world heatmap image to track user-defined assets, identify outliers and optimize procedural asset usage.</li>
+												<li>Consistently enforced rules, guidelines and placement metrics in validating peer submissions.</li>
 											</ul>
 										</p>
 									</section>
+
+									<header id="tl-subcop">
+										<h3>Submission Tool</h3>
+										<h4>Tools, C#</h4>
+									</header>
+									<section class="notes">
+										<p>
+											Please note that the images used are for visual representation purposes only and are not lifted from the actual tool.
+										</p>
+									</section>
+									<!--Insert image github submission image here-->
+									<p>
+										This tool was a straightforward yet effective communication and tracking tool for submissions made by my peers. Simply put, it copied all necessary information about a submission like the files, summary, and identifying characteristics that were tracked when a new version of the game came in then posted it in our communication channel where everyone gets visibility. 
+									</p>
+									<p>
+										One main workflow pain point that was solved by this tool was that it used to be a manual labor task for each person for each submission they did. More issues on this include:
+									</p>
+									<ul>
+										<li>Being prone to human errors</li>
+										<li>Having several submissions separately can get tedious</li>
+										<li>Manual formatting can increase the workload</li>
+									</ul>
+									<p>
+										Overall, this increased the overhead time of just simply having their work checked and submitted to adding more clerical tasks of tracking and formatting information on the screen which shouldn’t even be their job at this point.
+									</p>
+									<p>
+										Having this tool automated most of this process by:
+									</p>
+									<ul>
+										<li>Standardizing the format and information posted</li>
+										<li>Removing friction from the submission process</li>
+										<li>Reducing manual labor and human errors</li>
+									</ul>
+
+									<header id="tl-heatmap">
+										<h3>Heatmap Reporter Tool</h3>
+										<h4>Tools, C#</h4>
+									</header>
+									<section class="notes">
+										<p>
+											Please note that the images used are for visual representation purposes only and are not lifted from the actual tool.
+										</p>
+									</section>
+									<!--insert map marker image in games here-->
+									<p>
+										This tool was the more complex tool that I made as a Junior Technical Level Designer in Ubisoft Philippines. It essentially finds all instances of the assets in a defined in a list and produces a map image that has markers of where those assets were located in the world. 
+									</p>
+									<p>
+										Key features of the tool include:
+									</p>
+									<ul>
+										<li>User defined assets with customizable colored markers</li>
+										<li>Accurately plots out markers in a 2D overworld map</li>
+										<li>User-defined settings can be saved and reloaded with the tool is reloaded</li>
+										<li>Saves a copy of the image in the user-defined file location</li>
+										<li>Generates an email report of the assets found and provides comparison points</li>
+										<li>Nighly report generation</li>
+									</ul>
+									<p>
+										The goal was to track user-defined assets (usually procedural ones) and make sure that those were in the right places and within the right amount that will not deter game performance.
+									</p>
+									<!--insert image of MVVM here-->
+									<p>
+										This tool marked my first WPF tool using the MVVM pattern where I learned how data should be manipulated in code and its clear decoupling to the UI. Since then, I continued onto make more tools in other projects using this same software architectural pattern.
+									</p>
+									<!--insert image of interactive map here-->
+									<p>
+										Since UI is also involved, I also had to design the visuals and the user experience. And I think the modularity of the tool makes it a really valuable tracking asset for most cases as it can be user-defined. So they can track things like chests, certain types of trees, invisible collider assets and all that making it similar to those interactive maps we now have these days.
+									</p>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
@@ -118,6 +185,10 @@
 												<tr>
 													<td><strong>Roles:</strong></td>
 													<td>Technical Designer</td>
+												</tr>
+												<tr>
+													<td><strong>Affiliation/s:</strong></td>
+													<td>Ubisoft Philippines</td>
 												</tr>
 												<tr>
 													<td><strong>Release Date:</strong></td>

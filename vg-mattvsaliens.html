@@ -80,7 +80,9 @@
 										</header>
 										<p>
 											<ul>
-												<li>Add highlights here.</li>
+												<li>Designed and implemented two game modes: <a href="#ft-timed" class="scrolly">Timed Challenges</a>, featuring an adaptive endless puzzle runner, and <a href="#ft-grid" class="scrolly">Grid Challenges</a>, utilizing a structured level-based progression system.</li>
+												<li>Made a level parser that reads a text file and maps the level in a grid procedurally.</li>
+												<li>Deployed builds in Google Play weekly for the clients to review.</li>
 											</ul>
 										</p>
 									</section>
@@ -102,14 +104,124 @@
 												<p style="text-align: center;">Grid Challenges</p>
 											</div>
 										</div>
+										<p>
+											The most fascinating part of this game for me was its clear intentions of becoming a <b>brain training math game</b>. This aligns with the company's values and vision of making the act of learning more accessible to kids. Visibly, this game trains players, mostly kids, basic subtraction and how different combinations of numbers can add up to that value.
+										</p>
 									</section>
 
-									<!--<section>
-										<ul class="icons">
-											<li><a href="https://s4lt-v4lt.itch.io/the-yellow-boat-reimagined" class="icon brands fa-itch-io" target="_blank"><span class="label">Itch.io</span></a></li>
-											<li><a href="https://www.facebook.com/TheYellowBoatGame" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-										</ul>
-									</section>-->
+									<header id="ft-timed">
+										<h3>Timed Challenge</h3>
+										<h4>Feature</h4>
+									</header>
+									<!--Insert timed challenge gif here-->
+									<p>
+										Timed Challenge Mode was initially proposed as the primary feature of the game. It had simple features with a simple flow that were as follows:
+									</p>
+									<ul>
+										<li>A 3x3 grid that with 1 central goal cell and 8 surrounding cells</li>
+										<li>Each surrounding cell will reduce the value of the central goal cell by its value</li>
+										<li>When the value of the central goal cell becomes 0 then a new central goal value will be randomly provided</li>
+										<li>All selected surrounding cells will be refilled with a new value</li>
+										<li>An endless runner with a timer continuously counting down to 0</li>
+										<li>If the timer runs out or the value of the central goal cell becomes a negative value, then the player loses</li>
+									</ul>
+									<p>
+										The overall design of this game is to just be fast and reinforces the concept of basic arithmetic through rapid testing loops. The central goal number increases gradually which increases difficulty and challenges players to think quickly and do their arithmetic mentally.
+									</p>
+									<h4>Implementation</h4>
+									<!--Insert thought process image here-->
+									<p>
+										As for implementation, I managed to make it a procedurally generated endless runner by working backwards.
+									</p>
+									<ol>
+										<li>So I started off by randomly generating a value from the central goal cell. </li>
+										<li>Once I had its value, it's time to choose among the available slots randomly.</li> 
+										<li>Then I randomly chose a value from 1 up to the value of the central goal cell minus 1. This will value will go to the selected slot in Step 2. For example, if we have 5 as the central goal cell value, a value from 1 to 4 will be chosen at random.</li> 
+										<li>After getting that random value, I subtracted that value to the central goal cell value and took note of that current value. So in the example if I generated a value of 3 then I will take note of (5 - 3) which equals to 2.</li>
+										<li>I proceeded to choosing another empty slot.</li>
+										<li>Then generate a random value from 1 up to the current value we had in Step 4. Then take note of the current value. In the example, that would be from 1 to 2. If I got a 1 then I will take note of (2 - 1) which equals to 1.</li>
+										<li>I kept looping from Step 5 at this point until the current value became 0.</li>
+										<li>When the value became 0, other empty surrounding cells will be filled with random values from 1 up to the value of the central goall cell minus 1.</li>
+										<li>Then the game starts.</li>
+									</ol>
+									<!--Insert thought process image here-->
+									<p>
+										On top of this process, I also took note of the maximum number of iterations we can do until we end the loop. This prevented events wherein we ran out of slots to fill and the current value is still not yet zero. The maximum iteration I had to employ was 3 iterations. That means if whatever the current value is by the third iteration, then it will be slotted into an available spot.
+									</p>
+									<p>
+										In the instance that I was not setting up the game and I had to keep the game going by generating new values, there were some extra steps into the process.
+									</p>
+									<ol>
+										<li>I still started off with a random value from the central goal cell.</li>
+										<li>Then from there, I ran a random chance of either generating a new value from a now empty selected cell or selecting a random value lower than the value of the central goal cell.</li>
+										<li>In the case of generating a new value from a now empty selected cell, I generated a random value from 1 up to the value of the central goal cell minus 1.</li>
+										<li>Similarly, the randomly generated value will be subtracted to the value of the central goal cell and will be noted as the current value.</li>
+										<li>Then after having that value assigned, I went back to Step 2 while also keeping track of how many empty cells are still available. The number of empty cells now dictated the number of iterations that can be made to prevent a lock out situation where there is no solution.</li>
+										<li>In the case of selecting a random value lower than the value of the central goal cell, then its value will be noted. Its value will be subtracted to the value of the central goal cell and will be noted as the current value.</li>
+										<li>Then after that, it goes back to Step 2.</li>
+										<li>Once current value is 0, then I just filled back in empty cells with a value from 1 up to the value of the central goal cell.</li>
+									</ol>
+									<!--Insert thought process image here-->
+									<p>
+										There are a lot of steps and it is harder to explain them in words but one thing is for sure, this really pushed my skills in making a procedural endless runner and, most importantly, my quick math skills.
+									</p>
+
+									<header id="ft-grid">
+										<h3>Grid Challenge</h3>
+										<h4>Feature</h4>
+									</header>
+									<!--Insert timed challenge gif here-->
+									<p>
+										Grid Challenge mode later came in as a proposal to add more challenge to the game. Its audience is really aimed for more experienced players almost going to the territory of puzzle game players. It is more complex with its features as follows:
+									</p>
+									<ul>
+										<li>A user-defined grid that is filled procedurally with number values</li>
+										<li>Target cells are defined by a value and must be reduced to zero by surrounding number cells</li>
+										<li>Surrounding cells reduce the value of adjacent cells by its value</li>
+										<li>If all target cells are are reduced to 0, then the player wins</li>
+										<li>If one of the target cells are reduced to a negative value, then the player loses</li>
+									</ul>
+									<p>
+										I was the one who pitched in this kind of challenge in the game to introduce variety in the game. In retrospect, the design of the game was too punishing and could be improved by giving the players a chance to deselect a cell.
+									</p>
+									<h4>Implementation</h4>
+									<!--insert sample grid challenge level here-->
+									<p>
+										But implementing this grid-based puzzle feature was the most challenging and interesting part of the project. I had to make it <b>modular and procedural</b> so that we can make a lot of interesting shapes in the levels instead of hand-placing these things.
+									</p>
+									<p>
+										For the modular part of this project, I made a simple text parser that reads every character and translates it into a grid. The following characters are being read to make up for the grid:
+									</p>
+									<ul>
+										<li><b>x</b> - no button should be here</li>
+										<li><b>a</b> - a surrounding cell will be spawned</li>
+										<li><b><i>number value</i></b> - the value of the target cell</li>
+									</ul>
+									<!--Insert text parsing grid here-->
+									<p>
+										This was how the screenshot above was made through parsing Xs, As and numbers in text file. Making levels are now made easier and faster because we just need to define a shape and it will automatically fill in the level for us.
+									</p>
+									
+									<!--Insert grid based procedural sketch here-->
+									<p>
+										Now for the procedural part of it, it's a lengthy and complicated process that involves a lot of looping and catching edge cases but the simple breakdown of how it generates the values in the grid is that instead of just maintaining the values of the surrounding cell, we add on top of it.
+									</p>
+									<p>
+										The process shares some similarities as to how surrounding cells in the timed challenge are made but with an extra step of adding on top of it as it moved out. 
+									</p>
+									<ol>
+										<li>I started with a random target cell value and fill in the values moving out.</li>
+										<li>From there, I put random values on its surrounding cell that is less than its value.</li>
+										<li>To accommodate for multiple solutions, when moving further out, if I generated a random value from a cell. </li>
+										<li>The value from step 3 will have a chance to add its value to the surrounding cells. So if a cell generates a 2 around a 3, 4 and 2, those three values will become 5, 6 and 4. Possibly it can even be 5, 4 and 4 to also account for wrong solutions.</li>
+									</ol>
+									<p>
+										Using this method made the surrounding cells of the target cell much larger in value and forced players to really work from the outside then go in. This method also accommodated for multiple solutions and made sure that there was no locking out of the level. It made sure that players have a way to figure out a solution.
+									</p>
+									<!--Insert thought process image here-->
+									<p>
+										Overall, making this feature pushed my logical skills to the test as to how the algorithm will work with me in making levels. I did not put only my programmer hat, but I also need to put on my designer hat as the rules should make sense and solutions should always be viable. With that said, this feature taught me how procedural levels work with a lot intentionality put into it.
+									</p>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
@@ -126,7 +238,14 @@
 												</tr>
 												<tr>
 													<td><strong>Roles:</strong></td>
-													<td>Programmer</td>
+													<td>
+														Programmer<br/>
+														UI Artist
+													</td>
+												</tr>
+												<tr>
+													<td><strong>Affiliation/s:</strong></td>
+													<td>I Am VR Panda</td>
 												</tr>
 												<tr>
 													<td><strong>Release Date:</strong></td>
