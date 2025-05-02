@@ -1834,6 +1834,15 @@ input, select, textarea {
 			opacity: 0.7;
 		}
 
+/* Popup Image */
+	.imagesource p {
+		display: block;
+		font-size: small;
+		margin: -10px 0px;
+		font-style: italic;
+		color: #555;
+	}
+
 /* The Modal (background) */
 	.modal {
 		display: none; /* Hidden by default */
