@@ -80,31 +80,105 @@
 											<ul>
 												<li>Collaborated across disciplines to support setups and debug issues from pre-production to launch.</li>
 												<li>Enforced rules and guidelines for the team to follow best practices before data submission for Abbasiyah, Karkh and Sharkiyah locations.</li>
-												<li>Supported and maintained main line investigations like <a href="#mlq-harbour" class=" scrolly">The Harbourmaster</a>, <a href="#mlq-otat" class=" scrolly">Of Toil and Taxes</a> and <a href="#mlq-treasurer" class=" scrolly">The Treasurer</a>.</li>
+												<li>Supported and maintained <a href="#mlq-quest" class="scrolly">main line investigations</a> like <a href="#mlq-harbour" class=" scrolly">Coin, Corruption and Tea</a>, <a href="#mlq-otat" class=" scrolly">Of Toil and Taxes</a> and <a href="#mlq-treasurer" class=" scrolly">The Treasurer</a>.</li>
 												<li>Supported, maintained and setup the UI icon data for the <a href="#bq-forty" class=" scrolly">Forty Thieves</a> bonus quest.</li>
 												<li>Implemented a <a href="#feat-nwz" class=" scrolly">No Weapon Zone</a> feature for the Blackbox Quests.</li>
-												<li>Setup the data for the population character models.</li>
+												<li>Setup the data for the minor character models.</li>
 												<li>Created and designed validation tools to optimize the tech team's validation workflow.</li>
 											</ul>
 										</p>
 									</section>
 									
-									<header>
+									<header id="mlq-quest">
 										<h3>Main Line investigations</h3>
 									</header>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum, massa et dignissim consectetur, sapien mauris auctor mauris, et accumsan mi ex sed tellus. In efficitur urna leo, sit amet viverra urna consequat at. 
+										There are several investigations I jumped in to help maintain but these following investigations are the main ones I oversaw as a Technical Designer:
+									</p>
+									<ul>
+										<li><a href="#mlq-coins" class="scrolly">Coins and Daggers</a></li>
+										<li><a href="#mlq-harbour" class="scrolly">Coin, Corruption and Tea</a></li>
+										<li><a href="#mlq-otat" class="scrolly">Of Toil and Taxes</a></li>
+										<li><a href="#mlq-greed" class="scrolly">The Toll of Greed</a></li>
+										<li><a href="#mlq-treasurer" class="scrolly">The Treasurer</a></li>
+										<li><a href="#bq-forty" class="scrolly">Forty Thieves</a></li>
+									</ul>
+									<p>
+										For all these investigations, my primary responsibilities were to collaborate closely with the Quest Designers, Level Designers and Level Artists by doing regular maintenance of the scripts, occasional setup consultation and frequent bug fixing. By the end of the project, I stepped in to continue maintaining the quest and accommodate some last minute design changes. 
+									</p>
+									<p>
+										There were several challenges I encountered during the entirety of production with these investigations, but they gave me a lot of experience as a Technical Designer. One perspective is that of us bolstering the productivity of the team by providing creative solutions for their problems.
+									</p>
+									<p>
+										This really gave me a view on game development that everything is really just smoke and mirrors. We polish things up so that players may have a smooth experience but, internally, we do all the cheaty and hacky ways to deliver that experience hassle-free.
 									</p>
 
-									<header id="mlq-harbour">
-										<h3>The Harbourmaster</h3>
+									<header id="mlq-coins">
+										<h3>Coins and Daggers</h3>
 										<h4>Main Line investigations</h4>
 									</header>
 									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/pR-OL6uUI9Q?si=JRXk1EBPTmWgwkfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/E_mNwAuCCM8?si=ORSLC2S1rER2EYYe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										
 									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										This is the opening quest for the Treasurer investigation. There were several issues that we had to figure out for this to be in a stable place including:
+									</p>
+									<ul>
+										<li>Fixing Roshan's pathing and movement speed.</li>
+										<li>Limiting the player's movement speed.</li>
+										<li>Having variable movement speed depending on which part of the escorting mission you are in.</li>
+										<li>Making sure that no enemy fighting happens or if it happens, Roshan should be able to react to it.</li>
+									</ul>
+									<p>
+										There were some notable ones too like there was a time when an unexpected sneaking behavior was brought up for Roshan when she gets close to the bazaar. It took us some time to actually figure it out but I found out that it was due to the enemies that were nearby to the right of the path. Her behavior forces her to sneak by them so I had to recommend to wall it up or move them farther so that they didn't trigger that behavior.
+									</p>
+									<p>
+										There might be a couple of issues that needed to be fixed for this quest, but once we got to a stable state with this quest, it definitely stayed stable. This is one of the few quests with not a lot issues since there was not a lot going on for it as an introductory quest.
+									</p>
+
+									<header id="mlq-harbour">
+										<h3>Coin, Corruption and Tea</h3>
+										<h4>Main Line investigations</h4>
+									</header>
+									<div class="videoWrapper">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/KFTFD0xi3Yo?si=QPWMWJ25WSynhEXN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
+									<p>
+										Coin, Corruption and Tea is one of the more lengthy quest lines for the ones I maintained. Unlike the other quests where they are usually broken down into granular quest lines, this one spans from the quest giver up to the conclusion. So there bounds to be a lot of issues in this investigation.
+									</p>
+									<p>
+										Just from the first quest line with Kong giving you the quest there are several to name already like:
+									</p>
+									<ul>
+										<li>Setting up the data for the Kong's appearance in the quest.</li>
+										<li>Making sure that no fight would happend before the player begins the quest.</li>
+										<li>Having the tea crate be loaded even if it's a bit far from you.</li>
+										<li>Making a fallback teleport system for when players lose the tea crate or if they walk far away from it.</li>
+										<li>Assuring the path back is safe and smooth with the parkour.</li>
+										<li>Making sure that fight breaks out before the player approaches Kong to deliver the tea crate.</li>
+									</ul>
+									<p>
+										Then moving towards the Confiscation Warehouse section of the quest there were some issues but not a lot since most of the issues came from the layout of the location, the number of enemies in the location and the comfort of parkour itself. Still there were some that we had to figure out like:
+									</p>
+									<ul>
+										<li>Providing a good timing for the dialogue clues that will lead the player to the notes.</li>
+										<li>Fixing the letter's setting glow settings when they eagle vision it.</li>
+									</ul>
+									<p>
+										Once we're out of there and the players find where the Harbourmaster resides, they will now try to assassinate him. Again, most of the issues stem from the layout, enemy count and parkour but there were still some noted ones we had to fix including:
+									</p>
+									<ul>
+										<li>Setting up the key data into the Harbourmaster's inventory so players can take it.</li>
+										<li>Setting up the data for the Harbourmaster's appearance in the quest.</li>
+										<li>Making sure the fight space is conducive in case a fight breaks out.</li>
+										<li>Finding ways to make sure the breadcrumbing clues are given enough time to play out.</li>
+										<li>Since most of it were tight spaces, making sure that the covers and hidespots were comfortable for the players and will not unintentionally break their stealth.</li>
+									</ul>
+									<p>
+										There was not much setup and data issues needed to be fixed for this part of the quest since most of it is driven by stealth and combat. But these were some of the things I oversaw just to maintain the quality of the quest.
 									</p>
 
 									<header id="mlq-otat">
@@ -112,8 +186,21 @@
 										<h4>Main Line investigations</h4>
 									</header>
 									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/pR-OL6uUI9Q?si=JRXk1EBPTmWgwkfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/rqJNiXYdp-4?si=dE7nJ4tlNuIFAnm1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
+									<p>
+										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+									</p>
+
+									<header id="mlq-greed">
+										<h3>The Toll of Greed</h3>
+										<h4>Main Line investigations</h4>
+									</header>
+									<div class="videoWrapper">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/5F8z5SA0Sj4?si=tu9NogN29gPdGCJd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
 										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
 									</p>
@@ -123,8 +210,9 @@
 										<h4>Main Line investigations</h4>
 									</header>
 									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/pR-OL6uUI9Q?si=JRXk1EBPTmWgwkfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XixBy_KbMUA?si=VIXGN_HyH-iTVU5P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
 										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
 									</p>
@@ -134,8 +222,9 @@
 										<h4>Bonus Quest</h4>
 									</header>
 									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/i_dNSMq5Ans?si=dXZz9YsgucmlQ1ey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/RTeN0tTOht8?si=v3JuINxs2rUuuhLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
 										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
 									</p>
@@ -145,8 +234,9 @@
 										<h4>Feature</h4>
 									</header>
 									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/pR-OL6uUI9Q?si=JRXk1EBPTmWgwkfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XixBy_KbMUA?si=wIodmr2JKwKE1Gts&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
 										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
 									</p>
