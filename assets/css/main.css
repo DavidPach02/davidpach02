@@ -1951,6 +1951,12 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
+	ul .twoColumn {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+	}
+
 /* Actions */
 
 	ul.actions {
@@ -2324,6 +2330,10 @@ input, select, textarea {
 		cursor: default;
 	}
 
+		#header.index{
+			background-image: url("../../images/Jam-Cycle7.gif");
+		}
+
 		#header:before {
 			content: '';
 			display: inline-block;
@@ -2353,7 +2363,6 @@ input, select, textarea {
 			font-size: 3em;
 			line-height: 1em;
 		}
-
 			#header h1 a {
 				color: inherit;
 			}

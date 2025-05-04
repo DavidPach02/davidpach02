@@ -104,13 +104,19 @@
 										<li><a href="#bq-forty" class="scrolly">Forty Thieves</a></li>
 									</ul>
 									<p>
-										For all these investigations, my primary responsibilities were to collaborate closely with the Quest Designers, Level Designers and Level Artists by doing regular maintenance of the scripts, occasional setup consultation and frequent bug fixing. By the end of the project, I stepped in to continue maintaining the quest and accommodate some last minute design changes. 
+										For all these investigations, my primary responsibilities were to collaborate closely with the Quest Designers, Level Designers and Level Artists by doing regular maintenance of their scripts, occasional setup consultation and frequent bug fixing. By the end of the project, I stepped in to continue maintaining the quest and accommodate some last minute design changes. 
 									</p>
+									<p>
+										There are other investigations that I also helped in whether it is by fixing bugs or investigating setups like:
+									</p>
+									<ul>
+										<li>The Great Symposium</li>
+									</ul>
 									<p>
 										There were several challenges I encountered during the entirety of production with these investigations, but they gave me a lot of experience as a Technical Designer. One perspective is that of us bolstering the productivity of the team by providing creative solutions for their problems.
 									</p>
 									<p>
-										This really gave me a view on game development that everything is really just smoke and mirrors. We polish things up so that players may have a smooth experience but, internally, we do all the cheaty and hacky ways to deliver that experience hassle-free.
+										This really gave me a view on game development that everything is really just smoke and mirrors. We polish things up so that players may have a smooth experience but, internally, we do all the cheaty and hacky ways to make sure that we deliver the best player-first experience.
 									</p>
 
 									<header id="mlq-coins">
@@ -159,6 +165,7 @@
 										<li>Making a fallback teleport system for when players lose the tea crate or if they walk far away from it.</li>
 										<li>Assuring the path back is safe and smooth with the parkour.</li>
 										<li>Making sure that fight breaks out before the player approaches Kong to deliver the tea crate.</li>
+										<li>Setting up Kong's post-quest behavior.</li>
 									</ul>
 									<p>
 										Then moving towards the Confiscation Warehouse section of the quest there were some issues but not a lot since most of the issues came from the layout of the location, the number of enemies in the location and the comfort of parkour itself. Still there were some that we had to figure out like:
@@ -190,7 +197,17 @@
 									</div>
 									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										This quest line is the most challenging one to maintain and solve because it involves so many moving parts. There three AI NPCs, four AI mounts, a long stretch of road, an ambush sequence and post-quest behavior that needs to be maintained. There were so many places where it can go wrong and break off the quest but here some noteworthy ones that we had to fix:
+									</p>
+									<ul>
+										<li>Making sure that the three NPCs have a consistent behavior of going to places they need to go like their starting places, the merchant spots post-argument, their respective mounts during the escort mission, their hiding spots during the ambush, their respective mounts post-ambush, their destination and, finally, their post-quest activities.</li>
+										<li>Finding ways to not let the player go ahead too much from the three NPCs.</li>
+										<li>Accommodating for saving and loading cases and making sure that the quest still works after doing those actions. We had tons of issues with this quest, particularly in the saving and loading parts. Sometimes NPC won't move anymore or sometimes mounts are not there or some beats of the quest aren't working properly anymore so that's why this is a huge challenge.</li>
+										<li>Making sure that the explosives are still following proper guidelines but still delivers a shock factor during the ambush.</li>
+										<li>Setting up a proper ambush and fight behavior from the enemy NPCs.</li>
+									</ul>
+									<p>
+										These are just some of the things we had to deal with for this quest, but a lot of lessons were also learned here the hard way about how the engine works and how quest lines interact with the general systems in place.
 									</p>
 
 									<header id="mlq-greed">
@@ -202,7 +219,15 @@
 									</div>
 									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										The Toll of Greed is a fairly simple quest to maintain since it involves more on the stealth and combat metrics than actually setting up a complex quest for it. It had a few clues sparsed around the area but, ultimately, the goal is to just kill the corrupt tax collector. There was not much issues for this quest apart from a few notable ones like:
+									</p>
+									<ul>
+										<li>Setting up the detection and fleeing behavior for the Tax Collector.</li>
+										<li>Making sure that the guards show up if the Tax Collector comes running out.</li>
+										<li>Accommodating for cases when the player decides to fast travel to another location while the quest is still ongoing.</li>
+									</ul>
+									<p>
+										Overall, this quest line is short, simple and has more to do with maintenance work on the level design side than on the quest design side.
 									</p>
 
 									<header id="mlq-treasurer">
@@ -214,7 +239,86 @@
 									</div>
 									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										This is the most complex and largest quest I had to help with and maintain. A black box mission where players are put in a closed location and is tasked of one main goal. In order to achieve that goal, they can engage with their surroundings in different ways.
+									</p>
+									<p>
+										Gilded Butterflies, however, is a bit different since it's more of an investigation sequence rather than an open-ended creative kill mission. We've setup a lot of leads around The Bazaar for the players to stumble upon and follow including:
+									</p>
+									<ol>
+										<li>Talking to Kong and helping him out with his missing wares in exchange for information about the Treasurer.</li>
+										<li>Looking at the Foreign Merchant's goods to get the information about a rare item that he is selling in the auction.</li>
+										<li>Eavesdropping on the perfumer's conversation that gives further information about the Treasurer.</li>
+									</ol>
+									<p> 
+										There were a few issues of note that we had to deal with just with those leads like:
+									</p>
+									<ul>
+										<li>Maintaining proper metrics and player comfort during the retrieval of Kong's missing ware.</li>
+										<li>Setting up the proper glow for the things you can inspect from the Foreign Merchant's goods.</li>
+										<li>Setting up a proper interact button for wherever you sit and eavesdrop the perfumer and the perfumer supplier at the start.</li>
+										<li>Making sure that the perfurmer and the perfume supplier walk together and reaches their destinations properly.</li>
+									</ul>
+									<p>
+										Further down the quest, you had to retrive two things to get an audience with the Treasurer which are the following:
+									</p>
+									<ol>
+										<li>The Hairpin which can be obtained through one of two ways: either win it in the auction or steal it from a man who wins the auction.</li>
+										<li>The Brooch which can be obtained through stealing it from the Merchant's Guild.</li>
+									</ol>
+									<p>
+										This section in particular posed more problems initially than the first leads as it involved a possible combat scenarios and we had to account for failures. More careful setup was put in place for these things such as:
+									</p>
+									<ul>
+										<li>Making sure that no combat takes place inside the bazaar so stealing the hairpin became a matter of just taking it out in the open.</li>
+										<li>Setting up the arrival of key players in the dialogue sequence such as the Treasurer, the Perfumer, the man who wins the Hairpin and the auctioneer.</li>
+										<li>Isolating the combat space for the Merchant's Guild and making sure that there are measures in place such as the <a href="#feat-nwz" class="scrolly"><b>No Weapon Zone</b></a> to maintain the pacifist nature of the event.</li>
+										<li>Making sure the guard at the door also accounted for scenarios when one, two or none of the items are in the player's possession.</li>
+										<li>Setting up a proper reflection of the quest to account on which items the player didn't have any possession.</li>
+										<li>Putting up countermeasure on the entrance guard's behavior for him not to die or react to a fight in case a violent commotion breaks out in front of him.</li>
+									</ul>
+									<p>
+										Then once the players are in, the entire sequence from the entrance up to the point where you assassinate the Treasurer also has its own set of struggles we had to deal with. The entire sequence is so choreographed that we had to account of anything that players might do when they don't play by the script. Things such as:
+									</p>
+									<ul>
+										<li>Fighting the guards even as they enter the chambers.</li>
+										<li>Having some notoriety from the wanted system that lets guards react to it.</li>
+										<li>Suddenly breaking out into a fight even during the part where they should be waiting to be an audience.</li>
+										<li>Accounting for stealthy playstyles when they players find other means of killing the Treasurer.</li>
+										<li>Using thieves tools in assassinating the Treasurer.</li>
+										<li>Just making a break for it to kill the Treasurer instead of waiting in front to be accommodated.</li>
+										<li>When players bring the fight outside the chambers and into the Bazaar where the No Weapon Zone is still in place.</li>
+									</ul>
+									<p>
+										There are so many things that can go wrong with this quest and during closing I had the opportunity to maintain the quest and accommodate some last minute changes such as adding a path for the Treasurer to run to when she's being targeted and finding guards who will escort her and fight in her stead while she panics in a corner.
+									</p>
+									<p>
+										Overall, this is the most challenging yet the most satisfying quest that I've worked on. I am grateful for all my quest designers for trusting me in handling their quest problems and working through it to deliver this experience.
+									</p>
+
+									<header id="feat-nwz">
+										<h3>No Weapon Zone</h3>
+										<h4>Feature, Visual Scripting</h4>
+									</header>
+									<div class="videoWrapper">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XixBy_KbMUA?si=wIodmr2JKwKE1Gts&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
+									<p>
+										The No Weapon Zone is a feature I implemented for Assassin's Creed Mirage that assures a safe and violence-free zone in spaces or locations where combat is not expected. It has the following specs:
+									</p>
+									<ul>
+										<li>Disables most combat capabilities of the player such as attacking, blocking and using tools.</li>
+										<li>The notoriety system can be paused if the designer wishes to.</li>
+										<li>If the player enters in the zone from combat, then the No Weapon Zone is temporarily disabled until the player is out of combat.</li>
+										<li>Getting caught during a failed pickpocket attempt would also disable the No Weapon Zone temporarily.</li>
+										<li>Enemy guards will not be hostile against the player.</li>
+										<li>A message will pop out if the players try to do any combat-related actions and if the player leaves the zone.</li>
+									</ul>
+									<p>
+										Since this is quite a prohibitive feature, it is not present in a lot of location but it is mostly reserved for most black box quests that expect the players to not be engaged in combat. This includes <a href="#mlq-treasurer" class="scrolly"><b>Gilded Butterflies</b></a> and The Great Symposium. 
+									</p>
+									<p>
+										Owning this features was one of the things that gave me a greater responsibility in the project since it is a feature that is used in multiple quests. Knowing that if the feature is broken, then those quests could also potentially break.
 									</p>
 
 									<header id="bq-forty">
@@ -226,19 +330,20 @@
 									</div>
 									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										Forty Thieves is a bonus DLC quest that comes along with the game should the players buy it. And just like any other quest, this presented its own unique challenges like:
 									</p>
-
-									<header id="feat-nwz">
-										<h3>No Weapon Zone</h3>
-										<h4>Feature</h4>
-									</header>
-									<div class="videoWrapper">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/XixBy_KbMUA?si=wIodmr2JKwKE1Gts&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-									</div>
-									<p style="font-size: small; font-style: italic; margin: -1.5em 0 1em 0;">Source: Assassin's Creed Series</p>
+									<ul>
+										<li>Setting up custom quest icons.</li>
+										<li>Setting up the proper arrival of major characters in the quest like Murjana, Ali Baba and The King of Thieves.</li>
+										<li>Making sure that the escort mission with the mount is smooth and does not break or go off to the wrong direction.</li>
+										<li>setting up proper spawning and despawning of enemies in the Thieve's Den and during the house ambush sequence of the quest.</li>
+										<li>Setting up proper behavior from Murjana like helping out Basim if he is caught in a battle and the likes.</li>
+										<li>Maintaining the timing Murjana in her bloodied state.</li>
+										<li>Making sure that the fight space and environmental interactables follow best practices and guidelines since it was a tight indoor location.</li>
+										<li>Having a more unique boss fight with the King of Thieves with his flaming sword.</li>
+									</ul>
 									<p>
-										Vestibulum non lorem mollis, dignissim arcu sit amet, consequat metus. Vivamus volutpat vitae turpis id pharetra. Etiam pulvinar nunc id elit tempor, eget posuere leo lacinia. Etiam laoreet lacus sed ultricies condimentum. Fusce quis nisi a eros pharetra accumsan ac et neque. Morbi vel mauris a magna ornare mattis. Integer et est accumsan, fermentum eros placerat, pulvinar neque. Sed ut urna congue, pulvinar eros sed, egestas urna. Integer id velit ullamcorper, tempus odio eget, ornare urna.
+										Though the challenges we encountered with this quest line were tricky; nevertheless, this quest really pushed our capabilities as a team. This equipped us of better knowledge on dealing with situations like this for other projects to come.
 									</p>
 								</article>
 							</div>
