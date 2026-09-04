@@ -1,6 +1,7 @@
 // Initialize all lists -- Format [Name]|[Link]|[Image]
 // Video Games
 const professionalProjectsCategory = [
+    "Assassin's Creed Black Flag Resynced|vg-acbf.html|images/scrolley/vg/scrolley-vg-acbf.jpg",
     "Assassin's Creed Mirage|vg-acmirage.html|images/scrolley/vg/scrolley-vg-acmirage.jpg",
     "Matt vs Aliens|vg-mattvsaliens.html|images/scrolley/vg/scrolley-vg-mattvsaliens.jpg",
     "Skull and Bones|vg-snb.html|images/scrolley/vg/scrolley-vg-skullandbones.jpg"
